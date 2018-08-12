@@ -13,7 +13,9 @@ const styles = {
     width: 100 + "%",
     position: "fixed",
     bottom: 0,
-    borderTop: "0.5px solid lightgray"
+    borderTop: "0.5px solid lightgray",
+    zIndex: 1100,
+    backgroundColor: "white"
   },
   tabsIndicator: {
     top: 0
