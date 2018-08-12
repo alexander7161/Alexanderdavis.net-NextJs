@@ -18,7 +18,11 @@ function ButtonAppBar(props) {
     <AppBar position="fixed" className={classes.root}>
       <Toolbar>
         <Typography variant="title" color="inherit">
-          Home
+          {props.location.pathname === "/resume"
+            ? "Resume"
+            : props.location.pathname === "/"
+              ? "Projects"
+              : ""}
         </Typography>
       </Toolbar>
     </AppBar>
