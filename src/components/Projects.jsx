@@ -3,15 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
-import GridListTileBar from "@material-ui/core/GridListTileBar";
-import IconButton from "@material-ui/core/IconButton";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
-import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import ProjectTile from "./ProjectTile";
 
 const styles = theme => ({
   root: {
@@ -34,38 +26,17 @@ const styles = theme => ({
   },
   icon: {
     color: "white"
-  },
-  card: {
-    margin: "8px"
-  },
-  media: {
-    paddingTop: "56.25%" // 16:9
   }
 });
 
-/**
- * The example data is structured as follows:
- *
- * import image from 'path/to/image.jpg';
- * [etc...]
- *
- * const tileData = [
- *   {
- *     img: image,
- *     title: 'Image',
- *     author: 'author',
- *     featured: true,
- *   },
- *   {
- *     [etc...]
- *   },
- * ];
- */
 const tileData = [
   {
     img: null,
-    title: "Hello",
-    author: "Alex",
+    title: "ClosingTime",
+    description:
+      "Tells you when restaurants are offering closing time discounts.",
+    language: "React",
+    link: "https://alexanderdavis.net/closingtime/",
     featured: true
   },
   {
@@ -117,38 +88,7 @@ function AdvancedGridList(props) {
             cols={tile.featured ? 2 : 1}
             rows={tile.featured ? 2 : 1}
           >
-            {/* <img src={tile.img} alt={tile.title} />
-            <GridListTileBar
-              title={tile.title}
-              titlePosition="top"
-              actionIcon={
-                <IconButton className={classes.icon}>
-                  <StarBorderIcon />
-                </IconButton>
-              }
-              actionPosition="left"
-              className={classes.titleBar}
-            /> */}
-            <Card className={classes.card}>
-              <CardMedia image={tile.img} title="Contemplative Reptile" />
-              <CardContent>
-                <Typography gutterBottom variant="headline" component="h2">
-                  Lizard
-                </Typography>
-                <Typography component="p">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
-                </Typography>
-              </CardContent>
-              <CardActions>
-                <Button size="small" color="primary">
-                  Share
-                </Button>
-                <Button size="small" color="primary">
-                  Learn More
-                </Button>
-              </CardActions>
-            </Card>
+            <ProjectTile tile={tile} />
           </GridListTile>
         ))}
       </GridList>
