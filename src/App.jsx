@@ -14,7 +14,7 @@ class App extends Component {
         <div>
           <CssBaseline />
           <AppBar />
-          <div>
+          <div style={{ marginBottom: 75 }}>
             <SwipeableRoutes>
               <Route exact path="/" component={Projects} />
               <Route exact path="/resume" component={Resume} />

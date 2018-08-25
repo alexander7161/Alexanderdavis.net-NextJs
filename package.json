@@ -1,5 +1,6 @@
 {
   "name": "alexanderdavisnet-react",
+  "homepage": "https://alexanderdavis.net/beta",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -3,15 +3,18 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
+import Grid from "@material-ui/core/Grid";
+
 import ProjectTile from "./ProjectTile";
 
 const styles = theme => ({
   root: {
+    marginLeft: "auto",
+    marginRight: "auto",
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-around",
-    overflow: "hidden",
-    backgroundColor: theme.palette.background.paper
+    overflow: "hidden"
   },
   gridList: {
     width: "100%",
@@ -80,7 +83,7 @@ function AdvancedGridList(props) {
   const { classes } = props;
 
   return (
-    <div className={classes.root}>
+    <Grid xs={12} md={6} className={classes.root}>
       <GridList cellHeight={"auto"} className={classes.gridList}>
         {tileData.map(tile => (
           <GridListTile
@@ -92,7 +95,7 @@ function AdvancedGridList(props) {
           </GridListTile>
         ))}
       </GridList>
-    </div>
+    </Grid>
   );
 }
 

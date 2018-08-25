@@ -13,14 +13,31 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import classnames from "classnames";
 import Divider from "@material-ui/core/Divider";
 
-const styles = {
+const styles = theme => ({
   card: {
     margin: "8px"
   },
   media: {
     paddingTop: "56.25%" // 16:9
+  },
+  // expand: {
+  //   position: "absolute",
+  //   right: "8px"
+  // },
+  expand: {
+    transform: "rotate(0deg)",
+    transition: theme.transitions.create("transform", {
+      duration: theme.transitions.duration.shortest
+    }),
+    marginLeft: "auto",
+    [theme.breakpoints.up("sm")]: {
+      marginRight: -8
+    }
+  },
+  expandOpen: {
+    transform: "rotate(180deg)"
   }
-};
+});
 
 class ProjectTile extends React.Component {
   state = { expanded: false };
@@ -48,9 +65,6 @@ class ProjectTile extends React.Component {
 
         <CardActions>
           <Button size="small" color="primary">
-            Share
-          </Button>
-          <Button size="small" color="primary">
             Learn More
           </Button>
           <IconButton
@@ -61,7 +75,9 @@ class ProjectTile extends React.Component {
             aria-expanded={this.state.expanded}
             aria-label="Show more"
           >
-            <ExpandMoreIcon />
+            <ExpandMoreIcon
+              style={this.state.expanded ? { rotate: 180 } : { rotate: 0 }}
+            />
           </IconButton>
         </CardActions>
         <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>

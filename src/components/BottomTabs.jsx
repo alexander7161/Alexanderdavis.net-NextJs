@@ -5,7 +5,6 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import PersonIcon from "@material-ui/icons/Person";
 import ListIcon from "@material-ui/icons/List";
-import { connect } from "react-redux";
 import { withRouter } from "react-router";
 
 const styles = {
@@ -31,10 +30,12 @@ class BottomTabs extends React.Component {
   }
 
   getValue(pathname) {
-    if (pathname === "/resume") {
-      return 1;
-    } else if (pathname === "/") {
-      return 0;
+    switch (pathname) {
+      case "/resume":
+        return 1;
+      case "/":
+      default:
+        return 0;
     }
   }
 
@@ -85,4 +86,4 @@ BottomTabs.propTypes = {
   classes: PropTypes.object.isRequired
 };
 
-export default withRouter(connect()(withStyles(styles)(BottomTabs)));
+export default withRouter(withStyles(styles)(BottomTabs));
