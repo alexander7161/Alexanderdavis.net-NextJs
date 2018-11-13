@@ -1,5 +1,5 @@
 import thunk from "redux-thunk";
-import reducer from "./components/store/reducer";
+import reducer from "./components/projects/store/reducer";
 
 import { createBrowserHistory } from "history";
 import { applyMiddleware, compose, createStore } from "redux";

@@ -66,16 +66,16 @@ class BottomTabs extends React.Component {
     return (
       <div className={classes.root}>
         <Tabs
-          indicatorColor="primary"
-          textColor="primary"
+          indicatorColor="secondary"
+          textColor="secondary"
           centered
           fullWidth
           value={value}
           onChange={this.handleChange}
           classes={{ indicator: classes.tabsIndicator }}
         >
-          <Tab label="Projects" icon={<ListIcon />} />
-          <Tab label="Résumé" icon={<PersonIcon />} />
+          <Tab className="btn" label="Projects" icon={<ListIcon />} />
+          <Tab className="btn" label="Résumé" icon={<PersonIcon />} />
         </Tabs>
       </div>
     );
