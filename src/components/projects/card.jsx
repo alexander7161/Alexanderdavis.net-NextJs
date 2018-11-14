@@ -38,7 +38,7 @@ function getLastUpdated(lastUpdated) {
 const styles = theme => ({
   card: {
     height: "100%",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("sm")]: {
       marginLeft: "8px",
       marginRight: "8px"
     },
@@ -46,12 +46,7 @@ const styles = theme => ({
     paddingBottom: "70px"
   },
   media: {
-    [theme.breakpoints.down("lg")]: {
-      height: "222px"
-    },
-    [theme.breakpoints.down("xl")]: {
-      height: "250px"
-    }
+    height: "auto"
   },
   actions: {
     padding: "8px 0px",
@@ -86,16 +81,15 @@ function ImgMediaCard(props) {
     siteURL,
     downloadURL
   } = props.data;
-  console.log(props);
   return (
     <Card className={classes.card}>
       <CardMedia
         component="img"
-        alt="Contemplative Reptile"
+        alt={title}
         className={classes.media}
-        height="140"
+        height="222"
         image={img}
-        title="Contemplative Reptile"
+        title={title}
       />
       <CardContent>
         <Typography gutterBottom variant="headline" component="h2">

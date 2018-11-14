@@ -1,25 +1,23 @@
 import { UPDATE_RESTAURANTS } from "./actionTypes";
 
 export function updateGithubUpdated() {
-  return (dispatch, getState) => {
-    var projects = getState().data;
-    var returnData = [];
-    projects
-      .filter(p => p.githubURL)
-      .forEach(p => {
-        fetch(
+  return async (dispatch, getState) => {
+    var newProjects = [];
+    for (var p of getState().data) {
+      var newP = Object.assign({}, p);
+
+      if (p.githubURL) {
+        const response = await fetch(
           "https://api.github.com/repos/" +
             p.githubURL.substr(19, p.githubURL.length - 1) +
             "/commits"
-        )
-          .then(response => response.json())
-          .then(data => {
-            returnData.push({
-              [p.title]: new Date(data[0].commit.author.date)
-            });
-          });
-      });
-    dispatch(updateProjects(returnData));
+        );
+        const json = await response.json();
+        newP.lastUpdated = new Date(json[0].commit.author.date);
+      }
+      newProjects.push(newP);
+    }
+    dispatch(updateProjects(newProjects));
   };
 }
 

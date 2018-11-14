@@ -48,7 +48,7 @@ FullWidthGrid.propTypes = {
 };
 
 function mapStateToProps(state) {
-  return { tileData: state.data, fetchedData: state.fetchedData };
+  return { tileData: state.data };
 }
 
 export default connect(mapStateToProps)(withStyles(styles)(FullWidthGrid));

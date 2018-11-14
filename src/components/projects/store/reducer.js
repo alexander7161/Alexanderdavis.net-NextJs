@@ -93,12 +93,10 @@ const data = [
   }
 ];
 
-const todos = (state = { data, fetchedData: {} }, action) => {
+const todos = (state = { data }, action) => {
   switch (action.type) {
     case UPDATE_RESTAURANTS:
-      return Object.assign({}, state, {
-        fetchedData: action.projects
-      });
+      return Object.assign({}, state, { data: action.projects });
     default:
       return state;
   }
