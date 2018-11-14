@@ -60,7 +60,11 @@ const styles = theme => ({
   button: {
     textDecoration: "none",
     width: "100%",
-    margin: "1px"
+    margin: "1px",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "1.2em"
+    },
+    fontSize: "1em"
   },
   lastUpdated: {
     color: "#777",
