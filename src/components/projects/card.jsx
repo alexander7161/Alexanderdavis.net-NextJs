@@ -7,6 +7,9 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import Icon from "@material-ui/core/Icon";
+import { loadCSS } from "fg-loadcss/src/loadCSS";
+import classNames from "classnames";
 
 function getLastUpdated(lastUpdated) {
   var timeDiff = Math.abs(new Date().getTime() - lastUpdated.getTime());
@@ -70,11 +73,22 @@ const styles = theme => ({
     color: "#777",
     paddingBottom: "4px",
     paddingLeft: "4px"
+  },
+  icon: {
+    fontSize: "1.3em",
+    marginRight: "4px",
+    marginBottom: "auto",
+    marginTop: "auto"
   }
 });
 
 function ImgMediaCard(props) {
   const { classes, data } = props;
+  loadCSS(
+    "https://use.fontawesome.com/releases/v5.1.0/css/all.css",
+    document.querySelector("#insertion-point-jss")
+  );
+
   const {
     title,
     img,
@@ -115,15 +129,17 @@ function ImgMediaCard(props) {
         </Typography>
         <div style={{ display: "flex" }}>
           {githubURL && (
-            <Button
-              className={classes.button}
-              variant="contained"
-              size="small"
-              color="secondary"
-              onClick={() => (window.location.href = data.githubURL)}
-            >
-              CHECK IT OUT
-            </Button>
+            <a className={classes.button} href={data.githubURL}>
+              <Button
+                className={classes.button}
+                variant="contained"
+                size="small"
+                color="secondary"
+              >
+                <Icon className={classNames(classes.icon, "fab fa-github")} />
+                CHECK IT OUT
+              </Button>
+            </a>
           )}
           {siteURL && (
             <a className={classes.button} href={data.siteURL}>
@@ -132,22 +148,32 @@ function ImgMediaCard(props) {
                 variant="contained"
                 size="small"
                 color="secondary"
-                // onClick={() => (window.location.href = data.siteURL)}
               >
+                <Icon className={classNames(classes.icon, "fab fa-chrome")} />
                 VISIT SITE
               </Button>
             </a>
           )}
           {downloadURL && (
-            <Button
-              className={classes.button}
-              variant="contained"
-              size="small"
-              color="secondary"
-              onClick={() => (window.location.href = data.downloadURL)}
-            >
-              DOWNLOAD
-            </Button>
+            <a className={classes.button} href={data.downloadURL}>
+              <Button
+                className={classes.button}
+                variant="contained"
+                size="small"
+                color="secondary"
+              >
+                {data.languages === "Android" ? (
+                  <Icon
+                    className={classNames(classes.icon, "fab fa-android")}
+                  />
+                ) : data.languages === "Java" ? (
+                  <Icon className={classNames(classes.icon, "fab fa-java")} />
+                ) : (
+                  ""
+                )}
+                DOWNLOAD
+              </Button>
+            </a>
           )}
         </div>
       </CardActions>

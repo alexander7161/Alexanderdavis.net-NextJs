@@ -70,7 +70,7 @@ const data = [
     img: shappy,
     description:
       "Allows you to search items on leboncoin using your camera. Personalises results.",
-    languages: "React",
+    languages: "Android",
     githubURL: "https://github.com/alexander7161/Shappy",
     downloadURL: "https://github.com/alexander7161/Shappy/releases/",
     dateCreated: "26/05/2018"
