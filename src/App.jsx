@@ -31,6 +31,7 @@ class App extends Component {
   componentDidMount() {
     this.props.dispatch(updateGithubUpdated());
   }
+
   render() {
     return (
       <MuiThemeProvider theme={theme}>
@@ -40,8 +41,12 @@ class App extends Component {
             <AppBar />
             <div style={{ marginBottom: 75 }}>
               <SwipeableRoutes>
-                <Route exact path="/" component={Projects} />
-                <Route exact path="/resume" component={Resume} />
+                <Route path="/" render={() => <Projects key="projects" />} />
+                <Route
+                  exact
+                  path="/resume"
+                  render={() => <Resume key="resume" />}
+                />
               </SwipeableRoutes>
             </div>
             <BottomTabs />

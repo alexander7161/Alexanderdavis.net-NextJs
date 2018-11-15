@@ -22,11 +22,7 @@ function ButtonAppBar(props) {
     <AppBar position="sticky" className={classes.root}>
       <Toolbar>
         <Typography variant="title" color="inherit">
-          {props.location.pathname === "/resume"
-            ? "Resume"
-            : props.location.pathname === "/"
-              ? "Projects"
-              : ""}
+          {props.location.pathname === "/resume" ? "Resume" : "Projects"}
         </Typography>
       </Toolbar>
     </AppBar>

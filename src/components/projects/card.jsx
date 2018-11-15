@@ -46,7 +46,12 @@ const styles = theme => ({
       marginRight: "8px"
     },
     position: "relative",
-    paddingBottom: "70px"
+    [theme.breakpoints.up("md")]: {
+      paddingBottom: "75px"
+    },
+    [theme.breakpoints.down("sm")]: {
+      paddingBottom: "130px"
+    }
   },
   media: {
     height: "auto"
@@ -63,11 +68,20 @@ const styles = theme => ({
   button: {
     textDecoration: "none",
     width: "100%",
-    margin: "1px",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.up("md")]: {
+      margin: "1px"
+    },
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: "4px",
       fontSize: "1.2em"
     },
     fontSize: "1em"
+  },
+  buttonContainer: {
+    display: "flex",
+    [theme.breakpoints.down("md")]: {
+      display: "block"
+    }
   },
   lastUpdated: {
     color: "#777",
@@ -127,7 +141,7 @@ function ImgMediaCard(props) {
             ? "Created " + dateCreated
             : ""}
         </Typography>
-        <div style={{ display: "flex" }}>
+        <div className={classes.buttonContainer}>
           {githubURL && (
             <a className={classes.button} href={data.githubURL}>
               <Button
