@@ -41,16 +41,14 @@ function getLastUpdated(lastUpdated) {
 const styles = theme => ({
   card: {
     height: "100%",
-    [theme.breakpoints.down("sm")]: {
-      marginLeft: "8px",
-      marginRight: "8px"
-    },
     position: "relative",
     [theme.breakpoints.up("md")]: {
-      paddingBottom: "75px"
+      paddingBottom: "100px"
     },
     [theme.breakpoints.down("sm")]: {
-      paddingBottom: "130px"
+      paddingBottom: "130px",
+      marginLeft: "8px",
+      marginRight: "8px"
     }
   },
   media: {

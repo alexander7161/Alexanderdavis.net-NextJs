@@ -8,7 +8,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import BottomTabs from "./components/BottomTabs";
 import { updateGithubUpdated } from "./components/projects/store/actions";
 import { connect } from "react-redux";
-
+import ReactGA from "react-ga";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
@@ -32,12 +32,21 @@ class App extends Component {
     this.props.dispatch(updateGithubUpdated());
   }
 
+  componentDidUpdate(prevProps) {
+    if (
+      this.props.location.pathname !== prevProps.location.pathname ||
+      this.props.location.search !== prevProps.location.search
+    ) {
+      console.log(this.props.location.pathname);
+      // this.sendPageChange(this.props.location.pathname, this.props.location.search)
+    }
+  }
+
   render() {
     return (
       <MuiThemeProvider theme={theme}>
         <Router>
           <div>
-            <CssBaseline />
             <AppBar />
             <div style={{ marginBottom: 75 }}>
               <SwipeableRoutes>
