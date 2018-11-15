@@ -8,13 +8,11 @@ import "typeface-roboto";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import ReactGA from "react-ga";
 ReactGA.initialize("UA-44297367-1");
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 ReactDOM.render(
   <Provider store={store}>
     <React.Fragment>
       <CssBaseline />
-
       <App />
     </React.Fragment>
   </Provider>,

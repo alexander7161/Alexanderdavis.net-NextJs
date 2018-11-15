@@ -10,26 +10,27 @@ import Typography from "@material-ui/core/Typography";
 import Icon from "@material-ui/core/Icon";
 import { loadCSS } from "fg-loadcss/src/loadCSS";
 import classNames from "classnames";
+var ReactGA = require("react-ga");
 
 function getLastUpdated(lastUpdated) {
   var timeDiff = Math.abs(new Date().getTime() - lastUpdated.getTime());
   if (timeDiff / 1000 < 3600) {
     var diff = Math.ceil(timeDiff / (1000 * 60));
-    if (diff == 1) {
+    if (diff === 1) {
       diff += " minute ago";
     } else {
       diff += " minutes ago";
     }
   } else if (timeDiff / 1000 < 86400) {
-    var diff = Math.ceil(timeDiff / (1000 * 3600));
-    if (diff == 1) {
+    diff = Math.ceil(timeDiff / (1000 * 3600));
+    if (diff === 1) {
       diff += " hour ago";
     } else {
       diff += " hours ago";
     }
   } else {
-    var diff = Math.ceil(timeDiff / (1000 * 3600 * 24));
-    if (diff == 1) {
+    diff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+    if (diff === 1) {
       diff += " day ago";
     } else {
       diff += " days ago";
@@ -141,7 +142,11 @@ function ImgMediaCard(props) {
         </Typography>
         <div className={classes.buttonContainer}>
           {githubURL && (
-            <a className={classes.button} href={data.githubURL}>
+            <ReactGA.OutboundLink
+              className={classes.button}
+              eventLabel={title + " github"}
+              to={data.githubURL}
+            >
               <Button
                 className={classes.button}
                 variant="contained"
@@ -151,10 +156,14 @@ function ImgMediaCard(props) {
                 <Icon className={classNames(classes.icon, "fab fa-github")} />
                 CHECK IT OUT
               </Button>
-            </a>
+            </ReactGA.OutboundLink>
           )}
           {siteURL && (
-            <a className={classes.button} href={data.siteURL}>
+            <ReactGA.OutboundLink
+              className={classes.button}
+              eventLabel={title + " Website"}
+              to={data.siteURL}
+            >
               <Button
                 className={classes.button}
                 variant="contained"
@@ -164,10 +173,14 @@ function ImgMediaCard(props) {
                 <Icon className={classNames(classes.icon, "fab fa-chrome")} />
                 VISIT SITE
               </Button>
-            </a>
+            </ReactGA.OutboundLink>
           )}
           {downloadURL && (
-            <a className={classes.button} href={data.downloadURL}>
+            <ReactGA.OutboundLink
+              className={classes.button}
+              eventLabel={title + " download"}
+              to={data.downloadURL}
+            >
               <Button
                 className={classes.button}
                 variant="contained"
@@ -185,7 +198,7 @@ function ImgMediaCard(props) {
                 )}
                 DOWNLOAD
               </Button>
-            </a>
+            </ReactGA.OutboundLink>
           )}
         </div>
       </CardActions>

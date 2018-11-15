@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Card from "./card";
 import { connect } from "react-redux";
@@ -24,7 +23,7 @@ const styles = theme => ({
 
 class FullWidthGrid extends React.Component {
   render() {
-    const { classes, tileData, fetchedData } = this.props;
+    const { classes, tileData } = this.props;
     return (
       <Grid container className={classes.root}>
         <Grid item xs={12} md={10} lg={8}>

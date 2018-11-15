@@ -2,13 +2,11 @@ import React, { Component } from "react";
 import AppBar from "./components/AppBar";
 import Projects from "./components/projects/index";
 import Resume from "./components/Resume";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import SwipeableRoutes from "react-swipeable-routes";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import BottomTabs from "./components/BottomTabs";
 import { updateGithubUpdated } from "./components/projects/store/actions";
 import { connect } from "react-redux";
-import ReactGA from "react-ga";
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 
 const theme = createMuiTheme({
@@ -32,16 +30,6 @@ class App extends Component {
     this.props.dispatch(updateGithubUpdated());
   }
 
-  componentDidUpdate(prevProps) {
-    if (
-      this.props.location.pathname !== prevProps.location.pathname ||
-      this.props.location.search !== prevProps.location.search
-    ) {
-      console.log(this.props.location.pathname);
-      // this.sendPageChange(this.props.location.pathname, this.props.location.search)
-    }
-  }
-
   render() {
     return (
       <MuiThemeProvider theme={theme}>
@@ -50,12 +38,8 @@ class App extends Component {
             <AppBar />
             <div style={{ marginBottom: 75 }}>
               <SwipeableRoutes>
-                <Route path="/" render={() => <Projects key="projects" />} />
-                <Route
-                  exact
-                  path="/resume"
-                  render={() => <Resume key="resume" />}
-                />
+                <Route path="/" component={Projects} />
+                <Route exact path="/resume" component={Resume} />
               </SwipeableRoutes>
             </div>
             <BottomTabs />
