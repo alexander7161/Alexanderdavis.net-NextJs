@@ -81,7 +81,8 @@ const data = [
     description: "Video CVs for the 21st century.",
     languages: "React",
     githubURL: "https://github.com/octavius464/SnapCV",
-    dateCreated: "19/10/2018"
+    dateCreated: "19/10/2018",
+    siteURL: "https://snap-cv.herokuapp.com/"
   },
   {
     title: "CityScanner",
@@ -89,7 +90,8 @@ const data = [
     description: "Tinder for CityScanner. Find your perfect destination.",
     languages: "React",
     githubURL: "https://github.com/alexander7161/CityScanner",
-    dateCreated: "03/11/2018"
+    dateCreated: "03/11/2018",
+    siteURL: "https://city-scanner.herokuapp.com/"
   }
 ];
 
