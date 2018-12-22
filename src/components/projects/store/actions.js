@@ -13,7 +13,9 @@ export function updateGithubUpdated() {
             "/commits"
         );
         const json = await response.json();
-        newP.lastUpdated = new Date(json[0].commit.author.date);
+        if (json && json[0] && json[0].commit) {
+          newP.lastUpdated = new Date(json[0].commit.author.date);
+        }
       }
       newProjects.push(newP);
     }
