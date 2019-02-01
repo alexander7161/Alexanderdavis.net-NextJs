@@ -2,11 +2,12 @@ import closingTimePNG from "../img/closingTime.png";
 import alexanderdavisnet from "../img/alexanderdavisnet.png";
 import alzheimersassistant from "../img/AlzheimerAssistant.png";
 import mihc from "../img/MIHC.png";
-import propertyexplorer from "../img/propertyExplorer.png";
+import pledgr from "../img/pledgr.png";
 import shappy from "../img/shappy.png";
 import sproggo from "../img/sprogGo.png";
 import snapCV from "../img/snapCV.png";
 import CityScanner from "../img/cityScanner.png";
+import videoGameSoc from "../img/videoGameSoc.png";
 
 export const data = [
   {
@@ -54,16 +55,16 @@ export const data = [
     githubURL: "https://github.com/alexander7161/Alexanderdavis.net-React",
     dateCreated: "02/04/2018"
   },
-  {
-    title: "Property Explorer",
-    img: propertyexplorer,
-    description: "A tool to explore airbnb properties in London.",
-    languages: "Java",
-    githubURL: "https://github.com/alexander7161/propertyExplorer",
-    downloadURL:
-      "https://github.com/alexander7161/PropertyExplorer/releases/download/1.1/PropertyExplorer.jar",
-    dateCreated: "11/04/2018"
-  },
+  // {
+  //   title: "Property Explorer",
+  //   img: propertyexplorer,
+  //   description: "A tool to explore airbnb properties in London.",
+  //   languages: "Java",
+  //   githubURL: "https://github.com/alexander7161/propertyExplorer",
+  //   downloadURL:
+  //     "https://github.com/alexander7161/PropertyExplorer/releases/download/1.1/PropertyExplorer.jar",
+  //   dateCreated: "11/04/2018"
+  // },
   {
     title: "Shappy",
     img: shappy,
@@ -91,5 +92,22 @@ export const data = [
     githubURL: "https://github.com/alexander7161/CityScanner",
     dateCreated: "03/11/2018",
     siteURL: "https://city-scanner.herokuapp.com/"
+  },
+  {
+    title: "Pledgr",
+    img: pledgr,
+    description: "Create decentralised pledges.",
+    languages: "Solidity",
+    githubURL: "https://github.com/alexander7161/pledgr",
+    dateCreated: "26/01/2019"
+  },
+  {
+    title: "Video Game Soc",
+    img: videoGameSoc,
+    description: "Video game society game rental platform. Built with Laravel.",
+    languages: "PHP",
+    githubURL: "https://github.com/alexander7161/lab-video-game",
+    siteURL: "https://video-game-soc.herokuapp.com/",
+    dateCreated: "01/12/2018"
   }
 ];
