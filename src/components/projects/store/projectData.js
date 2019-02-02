@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import closingTimePNG from "../img/closingTime.png";
 import alexanderdavisnet from "../img/alexanderdavisnet.png";
 import alzheimersassistant from "../img/AlzheimerAssistant.png";
@@ -9,10 +10,12 @@ import snapCV from "../img/snapCV.png";
 import CityScanner from "../img/cityScanner.png";
 import videoGameSoc from "../img/videoGameSoc.png";
 
+=======
+>>>>>>> cbacc8e45528686e371bed8958a56a7fae3c0cf5
 export const data = [
   {
     title: "ClosingTime",
-    img: closingTimePNG,
+    img: "closingTime",
     description:
       "Tells you when restaurants are offering closing time discounts.",
     languages: "React",
@@ -21,7 +24,7 @@ export const data = [
   },
   {
     title: "Alzheimer's Assistant",
-    img: alzheimersassistant,
+    img: "AlzheimerAssistant",
     description: "A Cisco Spark chat bot for patients with alzheimer's.",
     languages: "Python",
     githubURL: "https://github.com/Futuramistic/Bot",
@@ -29,7 +32,7 @@ export const data = [
   },
   {
     title: "SprogGo",
-    img: sproggo,
+    img: "sprogGo",
     description: "Learn a new language easily and actively.",
     languages: "Android",
     githubURL: "https://github.com/alexander7161/SprogGo",
@@ -39,7 +42,7 @@ export const data = [
   },
   {
     title: "MIHC",
-    img: mihc,
+    img: "MIHC",
     description: "An electronic Healthcare System.",
     languages: "Android",
     githubURL: "https://github.com/alexander7161/MyIndividualHealthCare",
@@ -49,12 +52,13 @@ export const data = [
   },
   {
     title: "Alexanderdavis.net",
-    img: alexanderdavisnet,
+    img: "alexanderdavisnet",
     description: "My personal website.",
     languages: "React",
     githubURL: "https://github.com/alexander7161/Alexanderdavis.net-React",
     dateCreated: "02/04/2018"
   },
+<<<<<<< HEAD
   // {
   //   title: "Property Explorer",
   //   img: propertyexplorer,
@@ -65,9 +69,21 @@ export const data = [
   //     "https://github.com/alexander7161/PropertyExplorer/releases/download/1.1/PropertyExplorer.jar",
   //   dateCreated: "11/04/2018"
   // },
+=======
+  {
+    title: "Property Explorer",
+    img: "propertyExplorer",
+    description: "A tool to explore airbnb properties in London.",
+    languages: "Java",
+    githubURL: "https://github.com/alexander7161/propertyExplorer",
+    downloadURL:
+      "https://github.com/alexander7161/PropertyExplorer/releases/download/1.1/PropertyExplorer.jar",
+    dateCreated: "11/04/2018"
+  },
+>>>>>>> cbacc8e45528686e371bed8958a56a7fae3c0cf5
   {
     title: "Shappy",
-    img: shappy,
+    img: "shappy",
     description:
       "Allows you to search items on leboncoin using your camera. Personalises results.",
     languages: "Android",
@@ -77,7 +93,7 @@ export const data = [
   },
   {
     title: "SnapCV",
-    img: snapCV,
+    img: "snapCV",
     description: "Video CVs for the 21st century.",
     languages: "React",
     githubURL: "https://github.com/octavius464/SnapCV",
@@ -86,7 +102,7 @@ export const data = [
   },
   {
     title: "CityScanner",
-    img: CityScanner,
+    img: "cityScanner",
     description: "Tinder for CityScanner. Find your perfect destination.",
     languages: "React",
     githubURL: "https://github.com/alexander7161/CityScanner",

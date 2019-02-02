@@ -4,12 +4,13 @@ import { withStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import Icon from "@material-ui/core/Icon";
 import { loadCSS } from "fg-loadcss/src/loadCSS";
 import classNames from "classnames";
+import Image from "react-image-webp";
+
 var ReactGA = require("react-ga");
 
 function getLastUpdated(lastUpdated) {
@@ -53,7 +54,12 @@ const styles = theme => ({
     }
   },
   media: {
-    height: "auto"
+    height: "auto",
+    width: "100%",
+    display: "block",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center"
   },
   actions: {
     padding: "8px 0px",
@@ -114,13 +120,12 @@ function ImgMediaCard(props) {
   } = props.data;
   return (
     <Card className={classes.card}>
-      <CardMedia
-        component="img"
+      <Image
         alt={title}
-        className={classes.media}
-        height="222"
-        image={img}
         title={title}
+        className={classes.media}
+        src={require("./img/" + img + ".png")}
+        webp={require("./img/" + img + ".webp")}
       />
       <CardContent>
         <Typography gutterBottom variant="headline" component="h2">
