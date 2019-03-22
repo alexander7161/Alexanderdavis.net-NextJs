@@ -8,13 +8,7 @@ import { connect } from "react-redux";
 const styles = theme => ({
   container: {
     overflowY: "scroll",
-    height: "calc(100vh - 56px - 75px)",
-    [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: { 
-      height: "calc(100vh - 48px - 75px)", 
-    }, 
-    [theme.breakpoints.up('sm')]: { 
-      height: "calc(100vh - 64px - 75px)", 
-    } 
+    height: `calc(100vh - ${theme.mixins.toolbar['minHeight']}px - 72px)`
   },
   root: {
     paddingTop: "16px",

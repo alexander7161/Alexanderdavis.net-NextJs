@@ -36,15 +36,12 @@ class App extends Component {
         <Router>
           <React.Fragment>
             <AppBar />
-            <div>
               <SwipeableRoutes style={{  
     WebkitOverflowScrolling: 'touch', // iOS momentum scrolling
-  
   }}>
                 <Route path="/" component={Projects} />
                 <Route exact path="/resume" component={Resume} />
               </SwipeableRoutes>
-            </div>
             <BottomTabs />
           </React.Fragment>
         </Router>

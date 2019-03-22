@@ -9,7 +9,7 @@ import { withRouter } from "react-router";
 
 const styles = {
   root: {
-    width: 100 + "%",
+    width: "100%",
     position: "fixed",
     bottom: 0,
     borderTop: "0.5px solid lightgray",

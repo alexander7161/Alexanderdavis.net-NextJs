@@ -10,13 +10,7 @@ import Typography from "@material-ui/core/Typography";
 const styles = theme => ({
   root: {
     overflowY: "scroll",
-    height: "calc(100vh - 56px - 75px)",
-    [`${theme.breakpoints.up('xs')} and (orientation: landscape)`]: { 
-      height: "calc(100vh - 48px - 75px)", 
-    }, 
-    [theme.breakpoints.up('sm')]: { 
-      height: "calc(100vh - 64px - 75px)", 
-    } 
+    height: `calc(100vh - ${theme.mixins.toolbar['minHeight']}px - 72px)`,
   }
 });
 
