@@ -34,16 +34,19 @@ class App extends Component {
     return (
       <MuiThemeProvider theme={theme}>
         <Router>
-          <div>
+          <React.Fragment>
             <AppBar />
-            <div style={{ marginBottom: 75 }}>
-              <SwipeableRoutes>
+            <div>
+              <SwipeableRoutes style={{  
+    WebkitOverflowScrolling: 'touch', // iOS momentum scrolling
+  
+  }}>
                 <Route path="/" component={Projects} />
                 <Route exact path="/resume" component={Resume} />
               </SwipeableRoutes>
             </div>
             <BottomTabs />
-          </div>
+          </React.Fragment>
         </Router>
       </MuiThemeProvider>
     );
