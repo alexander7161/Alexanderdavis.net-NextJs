@@ -15,7 +15,6 @@ async function example() {
 			user: USER,
 			password: PASSWORD
 		});
-		console.log(await client.list());
 		await client.cd(HOST_PATH!);
 		await client.uploadDir(path.join(__dirname, "../..", "build"), "website");
 	} catch (err) {
