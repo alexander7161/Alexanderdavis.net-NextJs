@@ -19,6 +19,11 @@ before_deploy:
 deploy:
   skip_cleanup: true
   provider: script
+  env:
+    - USER=$USER
+    - HOST=$HOST
+    - PASSWORD=$PASSWORD
+    - HOST_PATH=$HOST_PATH
   script: node ./deploy/build/deploy.js
   on:
     branch: master
