@@ -1,59 +1,49 @@
 import React from "react";
-import PropTypes from "prop-types";
-import { withStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Card from "./card";
 import { connect } from "react-redux";
+import styled from "styled-components";
 
-const styles = theme => ({
-  container: {
-    overflowY: "scroll",
-    height: `calc(100vh - ${theme.mixins.toolbar['minHeight']}px - 72px)`
-  },
-  root: {
-    paddingTop: "16px",
-    paddingBottom: "16px",
-    marginLeft: "auto",
-    marginRight: "auto",
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden"
-  },
-  root2: {
-    flexGrow: 1
-  }
+const ContainerDiv = styled.div`
+	overflow-y: scroll;
+	height: calc(
+		100vh - ${props => props.theme.mixins.toolbar["minHeight"]}px - 72px
+	);
+`;
+
+const RootGrid = styled(Grid)`
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	overflow: hidden;
+`;
+
+const FlexGrowGrid = styled(Grid)`
+	flex-grow: 1;
+`;
+
+export default connect(mapStateToProps)(({ theme, tileData }) => {
+	return (
+		<ContainerDiv theme={theme}>
+			<RootGrid container>
+				<Grid item xs={12} md={10} lg={8}>
+					<FlexGrowGrid container spacing={16}>
+						{tileData.map((t, i) => (
+							<Grid key={i} item md={4} sm={6} xs={12}>
+								<Card data={t} />
+							</Grid>
+						))}
+					</FlexGrowGrid>
+				</Grid>
+			</RootGrid>
+		</ContainerDiv>
+	);
 });
 
-class FullWidthGrid extends React.Component {
-  render() {
-    const { classes, tileData } = this.props;
-    return (
-      <div className={classes.container}>
-      <Grid container className={classes.root}>
-        <Grid item xs={12} md={10} lg={8}>
-          <div className={classes.root2}>
-            <Grid container spacing={16}>
-              {tileData.map((t, i) => (
-                <Grid key={i} item md={4} sm={6} xs={12}>
-                  <Card data={t} />
-                </Grid>
-              ))}
-            </Grid>
-          </div>
-        </Grid>
-      </Grid>
-      </div>
-    );
-  }
-}
-
-FullWidthGrid.propTypes = {
-  classes: PropTypes.object.isRequired
-};
-
 function mapStateToProps(state) {
-  return { tileData: state.data };
+	return { tileData: state.data };
 }
-
-export default connect(mapStateToProps)(withStyles(styles)(FullWidthGrid));
