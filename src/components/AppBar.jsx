@@ -20,12 +20,12 @@ const styles = theme => ({
 
 export default withRouter(
 	withStyles(styles)(({ classes, location }) => {
-		// useEffect(() => {
-		// 	loadCSS(
-		// 		"https://use.fontawesome.com/releases/v5.6.3/css/all.css",
-		// 		document.querySelector("#insertion-point-jss")
-		// 	);
-		// });
+		useEffect(() => {
+			loadCSS(
+				"https://use.fontawesome.com/releases/v5.6.3/css/all.css",
+				document.querySelector("#insertion-point-jss")
+			);
+		});
 		return (
 			<AppBar position="sticky" className={classes.root}>
 				<Toolbar>

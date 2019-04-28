@@ -29,7 +29,6 @@ export function updateGithubUpdated(): ThunkAction<
                 return p;
             }),
         );
-
         dispatch(updateProjects(newProjects));
     };
 }

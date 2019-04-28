@@ -1,3 +1,4 @@
+// tslint:disable-next-line: no-submodule-imports
 import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
 import React, { Component } from "react";
 import { connect, DispatchProp } from "react-redux";

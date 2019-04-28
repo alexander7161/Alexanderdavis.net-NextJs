@@ -1,9 +1,9 @@
-import Grid from "@material-ui/core/Grid";
+import { Grid } from "@material-ui/core";
 import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
 import Card from "./card";
-import {ProjectsState} from "./store/types";
+import { ProjectsState } from "./store/types";
 
 const ContainerDiv = styled.div`
 	overflow-y: scroll;
@@ -23,23 +23,25 @@ const Root = styled.div`
 	overflow: hidden;
 `;
 
-export default connect(mapStateToProps)(({ theme, tileData }: {tileData: Project[], theme: any}) => {
-    return (
-        <ContainerDiv theme={theme}>
-            <Root>
-                <Grid item={true} xs={12} md={10} lg={8}>
-                    <Grid container={true} spacing={16}>
-                        {tileData.map((t, i) => (
-                            <Grid key={i} item={true} md={4} sm={6} xs={12}>
-                                <Card data={t} />
-                            </Grid>
-                        ))}
+export default connect(mapStateToProps)(
+    ({ theme, tileData }: { tileData: Project[]; theme: any }) => {
+        return (
+            <ContainerDiv theme={theme}>
+                <Root>
+                    <Grid item={true} xs={12} md={10} lg={8}>
+                        <Grid container={true} spacing={16}>
+                            {tileData.map((t, i) => (
+                                <Grid key={i} item={true} md={4} sm={6} xs={12}>
+                                    <Card data={t} />
+                                </Grid>
+                            ))}
+                        </Grid>
                     </Grid>
-                </Grid>
-            </Root>
-        </ContainerDiv>
-    );
-});
+                </Root>
+            </ContainerDiv>
+        );
+    },
+);
 
 function mapStateToProps(state: ProjectsState) {
     return { tileData: state.data };
