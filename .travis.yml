@@ -6,9 +6,11 @@ cache:
   directories:
     - deploy/node_modules
 script:
+  - npm run test:ci
+  - npm run lint
+before_deploy:
   - npm install --prefix ./deploy/
   - npm run tsc --prefix ./deploy/
-before_deploy:
   - npm run build
 deploy:
   skip_cleanup: true

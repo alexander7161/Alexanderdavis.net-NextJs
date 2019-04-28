@@ -1,15 +1,13 @@
 import { Client } from "basic-ftp";
 import path from "path";
-const { HOST, USER, PASSWORD, HOST_PATH } = process.env;
 
-console.log(HOST_PATH);
+deploy();
 
-example();
-
-async function example() {
+async function deploy() {
 	const client = new Client();
 	client.ftp.verbose = true;
 	try {
+		const { HOST, USER, PASSWORD, HOST_PATH } = process.env;
 		await client.access({
 			host: HOST,
 			user: USER,
@@ -19,6 +17,7 @@ async function example() {
 		await client.uploadDir(path.join(__dirname, "../..", "build"), "website");
 	} catch (err) {
 		console.log(err);
+		process.exit(1);
 	}
 	client.close();
 }
