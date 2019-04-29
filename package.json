@@ -16,6 +16,7 @@
 		"@types/react-dom": "^16.8.4",
 		"@types/react-redux": "^7.0.8",
 		"connected-react-router": "^4.5.0",
+		"history": "^4.9.0",
 		"npm": "^6.9.0",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",

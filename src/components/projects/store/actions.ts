@@ -1,15 +1,17 @@
 import { Action } from "redux";
 import { ThunkAction } from "redux-thunk";
-import { ProjectsState, UPDATE_RESTAURANTS } from "./types";
+import { AppState } from "../../../configureStore";
+import { selectProjects } from "./selectors";
+import { UPDATE_RESTAURANTS } from "./types";
 
 export function updateGithubUpdated(): ThunkAction<
     void,
-    ProjectsState,
+    AppState,
     null,
     Action<string>
 > {
     return async (dispatch, getState) => {
-        const oldProjects = getState().data;
+        const oldProjects = selectProjects(getState());
         const newProjects = await Promise.all(
             oldProjects.map(async (p: Project) => {
                 if (p.githubURL) {

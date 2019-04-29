@@ -2,8 +2,9 @@ import { Grid } from "@material-ui/core";
 import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
+import { AppState } from "../../configureStore";
 import Card from "./card";
-import { ProjectsState } from "./store/types";
+import { selectProjects } from "./store/selectors";
 
 const ContainerDiv = styled.div`
 	overflow-y: scroll;
@@ -43,6 +44,6 @@ export default connect(mapStateToProps)(
     },
 );
 
-function mapStateToProps(state: ProjectsState) {
-    return { tileData: state.data };
+function mapStateToProps(state: AppState) {
+    return { tileData: selectProjects(state) };
 }
