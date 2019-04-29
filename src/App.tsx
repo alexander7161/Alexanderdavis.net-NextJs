@@ -1,5 +1,14 @@
 // tslint:disable-next-line: no-submodule-imports
-import { createMuiTheme, MuiThemeProvider } from "@material-ui/core/styles";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+    faAndroid,
+    faChrome,
+    faGithub,
+    faJava,
+    faLastfm,
+    faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { createMuiTheme, MuiThemeProvider } from "@material-ui/core";
 import React, { Component } from "react";
 import { connect, DispatchProp } from "react-redux";
 import { BrowserRouter as Router, Route } from "react-router-dom";
@@ -10,6 +19,8 @@ import BottomTabs from "./components/BottomTabs";
 import Projects from "./components/projects/index";
 import { updateGithubUpdated } from "./components/projects/store/actions";
 import Resume from "./components/Resume";
+
+library.add(faLinkedin, faLastfm, faGithub, faJava, faAndroid, faChrome);
 
 const theme = createMuiTheme({
     palette: {

@@ -7,4 +7,5 @@ interface Project {
     dateCreated: string;
     githubURL?: string;
     downloadURL?: string;
+    lastUpdated?: Date;
 }
