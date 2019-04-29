@@ -16,6 +16,7 @@ async function deploy() {
         await client.cd(HOST_PATH!);
         await client.uploadDir(path.join(__dirname, "../..", "build"), "website");
     } catch (err) {
+        // tslint:disable-next-line: no-console
         console.log(err);
         process.exit(1);
     }
