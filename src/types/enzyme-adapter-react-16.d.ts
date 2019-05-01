@@ -1,6 +1,6 @@
 declare module "enzyme-adapter-react-16" {
-    export = index;
-    declare class index {
+    export = Index;
+    declare class Index {
         public static MODES: {
             MOUNT: string;
             SHALLOW: string;
