@@ -3,7 +3,7 @@ import { Button } from "@material-ui/core";
 import React from "react";
 import ReactGA from "react-ga";
 import styled, { css } from "styled-components";
-import WhiteIcon from "../WhiteIcon";
+import WhiteIcon from "../../components/WhiteIcon";
 
 const Container = styled.div`
 	display: flex;
