@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import styled from "styled-components";
 import { AppState } from "../../configureStore";
 import Card from "./card";
-import { selectProjects } from "./store/selectors";
+import { getProjectsWithLastUpdated } from "./store/selectors";
 
 const ContainerDiv = styled.div`
 	overflow-y: scroll;
@@ -25,15 +25,15 @@ const Root = styled.div`
 `;
 
 export default connect(mapStateToProps)(
-    ({ theme, tileData }: { tileData: Project[]; theme: any }) => {
+    ({ theme, projects }: { projects: Project[]; theme: any }) => {
         return (
             <ContainerDiv theme={theme}>
                 <Root>
                     <Grid item={true} xs={12} md={10} lg={8}>
                         <Grid container={true} spacing={16}>
-                            {tileData.map((t, i) => (
+                            {projects.map((t, i) => (
                                 <Grid key={i} item={true} md={4} sm={6} xs={12}>
-                                    <Card data={t} />
+                                    <Card project={t} />
                                 </Grid>
                             ))}
                         </Grid>
@@ -45,5 +45,5 @@ export default connect(mapStateToProps)(
 );
 
 function mapStateToProps(state: AppState) {
-    return { tileData: selectProjects(state) };
+    return { projects: getProjectsWithLastUpdated(state) };
 }
