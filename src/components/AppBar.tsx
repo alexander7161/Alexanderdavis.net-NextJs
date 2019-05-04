@@ -1,17 +1,36 @@
+import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { AppBar, IconButton, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
 import { withRouter } from "react-router";
 import styled from "styled-components";
 import WhiteIcon from "./WhiteIcon";
 
-const ButtonLink = styled.a`
+const StyledA = styled.a`
 	text-decoration: none;
 `;
+
+const ButtonLink = ({
+    href,
+    title,
+    type,
+}: {
+    href: string;
+    title: string;
+    type: IconName;
+}) => (
+    <StyledA href={href} title={title}>
+        <IconButton color="inherit">
+            <WhiteIcon icon={["fab", type]} />
+        </IconButton>
+    </StyledA>
+);
+
 const ButtonContainer = styled.div`
 	right: 16px;
 	left: auto;
 	position: absolute;
 `;
+
 export default withRouter(({ location }) => {
     return (
         <AppBar position="sticky">
@@ -23,27 +42,18 @@ export default withRouter(({ location }) => {
                     <ButtonLink
                         href="https://www.linkedin.com/in/alexander-l-davis/"
                         title="LinkedIn - Alexander7161"
-                    >
-                        <IconButton color="inherit">
-                            <WhiteIcon icon={["fab", "linkedin"]} />
-                        </IconButton>
-                    </ButtonLink>
+                        type="linkedin"
+                    />
                     <ButtonLink
                         href="https://github.com/alexander7161"
                         title="GitHub - Alexander7161"
-                    >
-                        <IconButton color="inherit">
-                            <WhiteIcon icon={["fab", "github"]} />
-                        </IconButton>
-                    </ButtonLink>
+                        type="github"
+                    />
                     <ButtonLink
                         href="https://www.last.fm/user/alexander7161"
                         title="LastFm - Alexander7161"
-                    >
-                        <IconButton color="inherit">
-                            <WhiteIcon icon={["fab", "lastfm"]} />
-                        </IconButton>
-                    </ButtonLink>
+                        type="lastfm"
+                    />
                 </ButtonContainer>
             </Toolbar>
         </AppBar>
