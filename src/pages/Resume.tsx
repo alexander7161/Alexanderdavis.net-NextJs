@@ -12,7 +12,7 @@ const ResumeContainer = styled(ContainerDiv)`
 export default ({ theme }: { theme: any }) => {
     return (
         <ResumeContainer theme={theme}>
-            <Typography variant="title" color="inherit">
+            <Typography variant="h6" color="inherit">
                 Coming Soon
             </Typography>
         </ResumeContainer>

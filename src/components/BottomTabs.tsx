@@ -70,7 +70,7 @@ class BottomTabs extends React.Component<BottomTabsProps, { value: number }> {
                     indicatorColor="secondary"
                     textColor="secondary"
                     centered={true}
-                    fullWidth={true}
+                    variant="fullWidth"
                     value={value}
                     onChange={this.handleChange}
                     classes={{ indicator: classes.tabsIndicator }}
