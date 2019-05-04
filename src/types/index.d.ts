@@ -1,4 +1,8 @@
-interface Project {
+interface Project extends ProjectFromAPI {
+    lastUpdatedString?: string;
+}
+
+interface ProjectFromAPI {
     title: string;
     img: string;
     description: string;

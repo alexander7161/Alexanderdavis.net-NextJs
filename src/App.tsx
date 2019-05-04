@@ -16,9 +16,9 @@ import SwipeableRoutes from "react-swipeable-routes";
 import { ThemeProvider } from "styled-components";
 import AppBar from "./components/AppBar";
 import BottomTabs from "./components/BottomTabs";
-import Projects from "./components/projects/index";
-import { updateGithubUpdated } from "./components/projects/store/actions";
-import Resume from "./components/Resume";
+import Projects from "./pages/projects";
+import { updateGithubUpdated } from "./pages/projects/store/actions";
+import Resume from "./pages/Resume";
 
 library.add(faLinkedin, faLastfm, faGithub, faJava, faAndroid, faChrome);
 
