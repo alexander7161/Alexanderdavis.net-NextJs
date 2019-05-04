@@ -35,7 +35,7 @@ export default withRouter(({ location }) => {
     return (
         <AppBar position="sticky">
             <Toolbar>
-                <Typography variant="title" color="inherit" style={{ color: "white" }}>
+                <Typography variant="h6" color="inherit" style={{ color: "white" }}>
                     {location.pathname === "/resume" ? "Resume" : "Projects"}
                 </Typography>
                 <ButtonContainer>

@@ -66,7 +66,7 @@ export default ({ project }: { project: Project }) => {
                 webp={require(`./img/${img}.webp`)}
             />
             <CardContent>
-                <Typography gutterBottom={true} variant="headline" component="h2">
+                <Typography gutterBottom={true} variant="h5" component="h2">
                     {title}
                 </Typography>
                 <Typography component="p">{description}</Typography>
