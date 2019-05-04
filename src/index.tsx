@@ -12,7 +12,7 @@ import { ThemeProvider } from "styled-components";
 import "typeface-roboto";
 import App from "./App";
 import store from "./configureStore";
-import registerServiceWorker from "./registerServiceWorker";
+import * as serviceWorker from "./serviceWorker";
 
 ReactGA.initialize("UA-44297367-1");
 
@@ -48,4 +48,4 @@ ReactDOM.render(
     document.getElementById("root"),
 );
 
-registerServiceWorker();
+serviceWorker.register();
