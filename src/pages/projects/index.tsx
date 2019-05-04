@@ -2,16 +2,10 @@ import { Grid } from "@material-ui/core";
 import React from "react";
 import { connect } from "react-redux";
 import styled from "styled-components";
+import { ContainerDiv } from "../../components";
 import { AppState } from "../../configureStore";
 import Card from "./card";
 import { getProjectsWithLastUpdated } from "./store/selectors";
-
-const ContainerDiv = styled.div`
-	overflow-y: scroll;
-	height: calc(
-		100vh - ${(props) => props.theme.mixins.toolbar.minHeight}px - 72px
-	);
-`;
 
 const Root = styled(Grid)`
 	&& {
