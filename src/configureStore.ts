@@ -2,7 +2,7 @@ import { connectRouter, routerMiddleware } from "connected-react-router";
 import { createBrowserHistory } from "history";
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunk from "redux-thunk";
-import projectsReducer from "./components/projects/store/reducer";
+import projectsReducer from "./pages/projects/store/reducer";
 
 const history = createBrowserHistory();
 const composeEnhancers =

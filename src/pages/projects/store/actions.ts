@@ -13,7 +13,7 @@ export function updateGithubUpdated(): ThunkAction<
     return async (dispatch, getState) => {
         const oldProjects = selectProjects(getState());
         const newProjects = await Promise.all(
-            oldProjects.map(async (p: Project) => {
+            oldProjects.map(async (p: ProjectFromAPI) => {
                 if (p.githubURL) {
                     const response = await fetch(
                         "https://api.github.com/repos/" +
@@ -35,7 +35,7 @@ export function updateGithubUpdated(): ThunkAction<
     };
 }
 
-function updateProjects(projects: Project[]) {
+function updateProjects(projects: ProjectFromAPI[]) {
     return {
         type: UPDATE_RESTAURANTS,
         projects,
