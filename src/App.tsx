@@ -59,6 +59,7 @@ class App extends Component<AppProps, { index: number; set: boolean }> {
                     onChangeIndex={this.onChangeIndex}
                     style={{
                         WebkitOverflowScrolling: "touch", // iOS momentum scrolling
+                        paddingBottom: "70px",
                     }}
                 >
                     <Route path="/" component={Projects} />
