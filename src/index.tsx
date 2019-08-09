@@ -17,9 +17,6 @@ import * as serviceWorker from "./serviceWorker";
 ReactGA.initialize("UA-44297367-1");
 
 const theme = createMuiTheme({
-    typography: {
-        useNextVariants: true,
-    },
     palette: {
         primary: {
             main: "#39D1FF",
