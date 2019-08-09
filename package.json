@@ -25,7 +25,7 @@
 		"react-redux": "^7.0.3",
 		"react-router": "^5.0.0",
 		"react-router-dom": "^5.0.0",
-		"react-scripts": "3.0.1",
+		"react-scripts": "3.1.0",
 		"react-swipeable-routes": "^0.6.0",
 		"react-swipeable-views": "^0.13.1",
 		"react-vertical-timeline-component": "^2.3.1",
