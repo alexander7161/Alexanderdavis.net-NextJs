@@ -8,10 +8,9 @@ cache:
 jobs:
   include:
     - stage: test and lint
-      name: "Unit Tests" 
-      script: npm run test:ci
-      name: "Linting" 
-      script: npm run lint
+      script:
+        - npm run test:ci
+        - npm run lint
     - stage: build
       script:
         - npm install --prefix ./deploy/
