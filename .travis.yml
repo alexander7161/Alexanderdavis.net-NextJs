@@ -5,16 +5,21 @@ cache:
   npm: true
   directories:
     - deploy/node_modules
-script:
-  - npm run test:ci
-  - npm run lint
-before_deploy:
-  - npm install --prefix ./deploy/
-  - npm run tsc --prefix ./deploy/
-  - npm run build
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: node ./deploy/build/deploy.js
-  on:
-    branch: master
+jobs:
+  include:
+    - stage: test and lint
+      script:
+        - npm run test:ci
+        - npm run lint
+    - stage: deploy
+      script:
+        - npm install --prefix ./deploy/
+        - npm run tsc --prefix ./deploy/
+        - npm run build
+      if: branch = master OR branch = develop
+      deploy:
+        skip_cleanup: true
+        provider: script
+        script: node ./deploy/build/deploy.js
+        on:
+          branch: master
