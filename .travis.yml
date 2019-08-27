@@ -11,12 +11,15 @@ jobs:
       script:
         - npm run test:ci
         - npm run lint
-    - stage: build
+    - stage: deploy
       script:
         - npm install --prefix ./deploy/
         - npm run tsc --prefix ./deploy/
         - npm run build
       if: branch = master OR branch = develop
-    - stage: deploy
-      script: node ./deploy/build/deploy.js
-      if: branch = master
+      deploy:
+        skip_cleanup: true
+        provider: script
+        script: node ./deploy/build/deploy.js
+        on:
+          branch: master
