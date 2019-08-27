@@ -7,9 +7,10 @@ cache:
     - deploy/node_modules
 jobs:
   include:
-    - stage: test
+    - stage: test and lint
+      name: "Unit Tests" 
       script: npm run test:ci
-    - stage: lint
+      name: "Linting" 
       script: npm run lint
     - stage: build
       script:
