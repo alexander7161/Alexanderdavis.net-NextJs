@@ -25,7 +25,7 @@ export default connect(mapStateToProps)(
         return (
             <ContainerDiv theme={theme}>
                 <Root item={true} xs={12} md={10} lg={8}>
-                    <Grid container={true} spacing={16}>
+                    <Grid container={true} spacing={2}>
                         {projects.map((t, i) => (
                             <Grid key={i} item={true} md={4} sm={6} xs={12}>
                                 <Card project={t} />
