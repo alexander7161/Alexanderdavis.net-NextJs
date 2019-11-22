@@ -49,38 +49,38 @@ const LastUpdatedText = styled(Typography)`
 `;
 
 export default ({ project }: { project: Project }) => {
-    const {
-        title,
-        img,
-        description,
-        lastUpdated,
-        dateCreated,
-        lastUpdatedString,
-    } = project;
-    return (
-        <CardContainer>
-            <StyledImage
-                alt={title}
-                title={title}
-                src={require(`./img/${img}.png`)}
-                webp={require(`./img/${img}.webp`)}
-            />
-            <CardContent>
-                <Typography gutterBottom={true} variant="h5" component="h2">
-                    {title}
-                </Typography>
-                <Typography component="p">{description}</Typography>
-            </CardContent>
-            <StyledCardActions>
-                <LastUpdatedText variant="body1" gutterBottom={true}>
-                    {lastUpdated
-                        ? `Last Updated ${lastUpdatedString}`
-                        : dateCreated
-                        ? `Created ${dateCreated}`
-                        : ""}
-                </LastUpdatedText>
-                <CardButtons project={project} />
-            </StyledCardActions>
-        </CardContainer>
-    );
+	const {
+		title,
+		img,
+		description,
+		lastUpdated,
+		dateCreated,
+		lastUpdatedString,
+	} = project;
+	return (
+		<CardContainer>
+			<StyledImage
+				alt={title}
+				title={title}
+				src={require(`./img/${img}.png`)}
+				webp={require(`./img/${img}.webp`)}
+			/>
+			<CardContent>
+				<Typography gutterBottom={true} variant="h5" component="h2">
+					{title}
+				</Typography>
+				<Typography component="p">{description}</Typography>
+			</CardContent>
+			<StyledCardActions>
+				<LastUpdatedText variant="body1" gutterBottom={true}>
+					{lastUpdated
+						? `Last Updated ${lastUpdatedString}`
+						: dateCreated
+						? `Created ${dateCreated}`
+						: ""}
+				</LastUpdatedText>
+				<CardButtons project={project} />
+			</StyledCardActions>
+		</CardContainer>
+	);
 };

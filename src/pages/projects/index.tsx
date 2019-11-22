@@ -21,23 +21,23 @@ const Root = styled(Grid)`
 `;
 
 export default connect(mapStateToProps)(
-    ({ theme, projects }: { projects: Project[]; theme: any }) => {
-        return (
-            <ContainerDiv theme={theme}>
-                <Root item={true} xs={12} md={10} lg={8}>
-                    <Grid container={true} spacing={2}>
-                        {projects.map((t, i) => (
-                            <Grid key={i} item={true} md={4} sm={6} xs={12}>
-                                <Card project={t} />
-                            </Grid>
-                        ))}
-                    </Grid>
-                </Root>
-            </ContainerDiv>
-        );
-    },
+	({ theme, projects }: { projects: Project[]; theme: any }) => {
+		return (
+			<ContainerDiv theme={theme}>
+				<Root item={true} xs={12} md={10} lg={8}>
+					<Grid container={true} spacing={2}>
+						{projects.map((t, i) => (
+							<Grid key={i} item={true} md={4} sm={6} xs={12}>
+								<Card project={t} />
+							</Grid>
+						))}
+					</Grid>
+				</Root>
+			</ContainerDiv>
+		);
+	},
 );
 
 function mapStateToProps(state: AppState) {
-    return { projects: getProjectsWithLastUpdated(state) };
+	return { projects: getProjectsWithLastUpdated(state) };
 }

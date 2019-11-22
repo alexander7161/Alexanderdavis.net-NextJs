@@ -10,11 +10,11 @@ const ResumeContainer = styled(ContainerDiv)`
 `;
 
 export default ({ theme }: { theme: any }) => {
-    return (
-        <ResumeContainer theme={theme}>
-            <Typography variant="h6" color="inherit">
-                Coming Soon
-            </Typography>
-        </ResumeContainer>
-    );
+	return (
+		<ResumeContainer theme={theme}>
+			<Typography variant="h6" color="inherit">
+				Coming Soon
+			</Typography>
+		</ResumeContainer>
+	);
 };
