@@ -10,7 +10,6 @@ jobs:
     - stage: test and lint
       script:
         - npm run test:ci
-        - npm run lint
     - stage: deploy
       script:
         - npm install --prefix ./deploy/
