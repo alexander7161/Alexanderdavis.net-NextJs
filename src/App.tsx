@@ -8,15 +8,10 @@ import {
 	faLastfm,
 	faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
-import React, { Component } from "react";
+import React from "react";
 import ReactGA from "react-ga";
-import { connect, DispatchProp, useDispatch } from "react-redux";
-import {
-	Route,
-	RouteComponentProps,
-	useLocation,
-	withRouter
-} from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { Route, useLocation } from "react-router-dom";
 import SwipeableRoutes from "react-swipeable-routes";
 import styled from "styled-components";
 import AppBar from "./components/AppBar";
@@ -48,7 +43,7 @@ const App = () => {
 
 	React.useEffect(() => {
 		dispatch(updateGithubUpdated());
-	}, []);
+	}, [dispatch]);
 
 	usePageViews();
 
