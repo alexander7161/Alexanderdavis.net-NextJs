@@ -13,10 +13,10 @@ const projectsSlice = createSlice({
   name: "projects",
   initialState,
   reducers: {
-    updateProjects(state, action: PayloadAction<ProjectFromAPI[]>) {
-      state.data = action.payload;
-      state.error = null;
-    },
+	updateProjects(state, action: PayloadAction<ProjectFromAPI[]>) {
+		state.data = action.payload;
+		state.error = null;
+	},
   },
 });
 // Extract the action creators object and the reducer
