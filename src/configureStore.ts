@@ -5,7 +5,7 @@ import {
 } from "@reduxjs/toolkit";
 import { createBrowserHistory } from "history";
 import thunk from "redux-thunk";
-import projectsReducer from "./pages/Projects/store";
+import projectsReducer from "./pages/Projects/store/index";
 
 const history = createBrowserHistory();
 
