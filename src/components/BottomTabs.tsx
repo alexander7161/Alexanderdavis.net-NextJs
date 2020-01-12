@@ -1,7 +1,7 @@
-import { Tab, Tabs, withStyles } from "@material-ui/core";
+import { Tab, Tabs } from "@material-ui/core";
 import { List as ListIcon, Person as PersonIcon } from "@material-ui/icons";
 import React from "react";
-import { useHistory, useLocation, withRouter } from "react-router";
+import { useHistory, useLocation } from "react-router";
 import styled from "styled-components";
 
 const Root = styled.div`
