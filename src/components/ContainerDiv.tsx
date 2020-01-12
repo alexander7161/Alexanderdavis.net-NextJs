@@ -1,8 +1,26 @@
+import { Container } from "@material-ui/core";
+import React from "react";
 import styled from "styled-components";
 
-export default styled.div`
+export const ContentContainer = styled.div`
 	overflow-y: scroll;
 	height: calc(
-		100vh - ${(props) => props.theme.mixins.toolbar.minHeight}px - 72px
+		100vh - ${props => props.theme.mixins.toolbar.minHeight}px - 72px
 	);
 `;
+
+export const ContentRoot = styled(Container)`
+	margin: 16px 0px;
+`;
+
+const ContainerDiv: React.FC = ({ children }) => {
+	return (
+		<ContentContainer>
+			<ContentRoot maxWidth="md" disableGutters={true}>
+				{children}
+			</ContentRoot>
+		</ContentContainer>
+	);
+};
+
+export default ContainerDiv;

@@ -37,20 +37,20 @@ const Icon = styled(WhiteIcon)`
 `;
 
 export default ({
-    name,
-    URL,
-    text,
-    eventLabel,
+	name,
+	URL,
+	text,
+	eventLabel,
 }: {
-    text: string;
-    name?: IconName;
-    URL: string;
-    eventLabel: string;
+	text: string;
+	name?: IconName;
+	URL: string;
+	eventLabel: string;
 }) => (
-    <StyledLink eventLabel={eventLabel} to={URL}>
-        <StyledButton size="small" variant="contained" color="secondary">
-            {name && <Icon icon={["fab", name]} />}
-            {text}
-        </StyledButton>
-    </StyledLink>
+	<StyledLink eventLabel={eventLabel} to={URL}>
+		<StyledButton size="small" variant="contained" color="secondary">
+			{name && <Icon icon={["fab", name]} />}
+			{text}
+		</StyledButton>
+	</StyledLink>
 );
