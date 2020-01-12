@@ -44,7 +44,8 @@
 		"eject": "react-scripts eject",
 		"lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'",
 		"test:ci": "CI=true react-scripts test --env=jsdom",
-		"cov": "npm run test -- --coverage"
+		"cov": "npm run test -- --coverage",
+		"fix": "tslint --project . --fix"
 	},
 	"devDependencies": {
 		"@types/classnames": "^2.2.9",
