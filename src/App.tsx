@@ -6,13 +6,19 @@ import {
 	faGithub,
 	faJava,
 	faLastfm,
-	faLinkedin,
+	faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import React, { Component } from "react";
 import ReactGA from "react-ga";
-import { connect, DispatchProp } from "react-redux";
-import { Route, RouteComponentProps, withRouter } from "react-router-dom";
+import { connect, DispatchProp, useDispatch } from "react-redux";
+import {
+	Route,
+	RouteComponentProps,
+	useLocation,
+	withRouter
+} from "react-router-dom";
 import SwipeableRoutes from "react-swipeable-routes";
+import styled from "styled-components";
 import AppBar from "./components/AppBar";
 import BottomTabs from "./components/BottomTabs";
 import Projects from "./pages/projects";
@@ -21,54 +27,46 @@ import Resume from "./pages/Resume";
 
 library.add(faLinkedin, faLastfm, faGithub, faJava, faAndroid, faChrome);
 
-type AppProps = DispatchProp<any> & RouteComponentProps;
-class App extends Component<AppProps, { index: number; set: boolean }> {
-	constructor(props: AppProps) {
-		super(props);
-		this.state = { index: 0, set: false };
-		this.onChangeIndex = this.onChangeIndex.bind(this);
-	}
+const Container = styled.div`
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+`;
 
-	public componentDidMount() {
-		this.props.dispatch(updateGithubUpdated());
-		if (this.props.location.pathname === "/") {
-			this.recordPageView("/");
-		}
-	}
+const usePageViews = () => {
+	const location = useLocation();
 
-	public onChangeIndex(index: number): void {
-		if (!(index === 0 && this.state.index === 0)) {
-			this.setState({ index, set: true });
-			if (index === 0) {
-				this.recordPageView("/");
-			} else {
-				this.recordPageView("/resume");
-			}
-		}
-	}
+	const recordPageView = (page: string) => ReactGA.pageview(page);
 
-	public recordPageView(page: string) {
-		ReactGA.pageview(page);
-	}
+	React.useEffect(() => {
+		recordPageView(location.pathname);
+	}, [location]);
+};
 
-	public render() {
-		return (
-			<React.Fragment>
-				<AppBar />
-				<SwipeableRoutes
-					onChangeIndex={this.onChangeIndex}
-					style={{
-						WebkitOverflowScrolling: "touch", // iOS momentum scrolling
-						paddingBottom: "70px",
-					}}
-				>
-					<Route path="/" component={Projects} />
-					<Route exact={true} path="/resume" component={Resume} />
-				</SwipeableRoutes>
-				<BottomTabs />
-			</React.Fragment>
-		);
-	}
-}
+const App = () => {
+	const dispatch = useDispatch();
 
-export default withRouter(connect()(App));
+	React.useEffect(() => {
+		dispatch(updateGithubUpdated());
+	}, []);
+
+	usePageViews();
+
+	return (
+		<Container>
+			<AppBar />
+			<SwipeableRoutes
+				style={{
+					WebkitOverflowScrolling: "touch", // iOS momentum scrolling
+					overflowY: "hidden"
+				}}
+			>
+				<Route path="/" component={Projects} />
+				<Route exact={true} path="/resume" component={Resume} />
+			</SwipeableRoutes>
+			<BottomTabs />
+		</Container>
+	);
+};
+
+export default App;

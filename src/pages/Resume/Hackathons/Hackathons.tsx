@@ -1,16 +1,16 @@
-import { Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import React from "react";
+import HackathonCard from "./HackathonCard";
 import { hackathonData } from "./store/hackathonData";
 
 export default () => {
 	return (
-		<>
-			<Typography variant="h6" color="inherit">
-				Hackathons
-			</Typography>
+		<Grid container={true} spacing={2}>
 			{hackathonData.map((h, i) => (
-				<div key={i}>{h.name}</div>
+				<Grid key={i} item={true} md={4} sm={6} xs={12}>
+					<HackathonCard hackathon={h} />
+				</Grid>
 			))}
-		</>
+		</Grid>
 	);
 };
