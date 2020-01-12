@@ -1,7 +1,7 @@
 import {
 	createMuiTheme,
 	CssBaseline,
-	MuiThemeProvider,
+	MuiThemeProvider
 } from "@material-ui/core";
 import React from "react";
 import ReactDOM from "react-dom";
@@ -22,19 +22,19 @@ const theme = createMuiTheme({
 			main: "#39D1FF",
 			light: "#60daff",
 			dark: "#2792b2",
-			contrastText: "#0E3440",
+			contrastText: "#0E3440"
 		},
 		secondary: {
 			main: "#007bff",
 			light: "#3395ff",
-			dark: "#0056b2",
-		},
-	},
+			dark: "#0056b2"
+		}
+	}
 });
 
 ReactDOM.render(
-	<Provider store={store}>
-		<React.Fragment>
+	<Router>
+		<Provider store={store}>
 			<CssBaseline />
 			<MuiThemeProvider theme={theme}>
 				<ThemeProvider theme={theme}>
@@ -43,9 +43,9 @@ ReactDOM.render(
 					</Router>
 				</ThemeProvider>
 			</MuiThemeProvider>
-		</React.Fragment>
-	</Provider>,
-	document.getElementById("root"),
+		</Provider>
+	</Router>,
+	document.getElementById("root")
 );
 
 serviceWorker.register();
