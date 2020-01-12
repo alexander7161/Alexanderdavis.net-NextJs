@@ -1,8 +1,8 @@
 import { Grid, Typography } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
-import HackathonCard from "./HackathonCard";
-import { hackathonData } from "./store/hackathonData";
+import ExperienceCard from "./ExperienceCard";
+import { experienceData } from "./store/experienceData";
 
 const Heading = styled(Typography)`
 	&& {
@@ -16,14 +16,14 @@ export default () => {
 	return (
 		<>
 			<Heading gutterBottom={true} variant="h5">
-				Hackathons ({hackathonData.length} Total)
+				Experience
 			</Heading>
 			<Grid container={true} spacing={2}>
-				{hackathonData
+				{experienceData
 					.sort((a, b) => +b.date - +a.date)
-					.map((h, i) => (
+					.map((e, i) => (
 						<Grid key={i} item={true} md={6} sm={6} xs={12}>
-							<HackathonCard hackathon={h} />
+							<ExperienceCard data={e} />
 						</Grid>
 					))}
 			</Grid>
