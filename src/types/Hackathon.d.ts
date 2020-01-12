@@ -3,7 +3,7 @@ interface Hackathon {
 	project?: string;
 	date: Date;
 	location: {
-		pos: { lat: number; lng: number };
+		pos?: { lat: number; lng: number };
 		country: string;
 		city: string;
 		building?: string;
