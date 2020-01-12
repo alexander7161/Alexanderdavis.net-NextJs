@@ -8,9 +8,9 @@ export const selectProjects = (state: AppState): ProjectFromAPI[] =>
 export const getProjectsWithLastUpdated = createSelector(
   [selectProjects],
   (projects) =>
-    projects.map((p) =>
-      p.lastUpdated
-        ? { ...p, lastUpdatedString: getLastUpdated(p.lastUpdated) }
-        : p,
-    ),
+	projects.map((p) =>
+		p.lastUpdated
+		? { ...p, lastUpdatedString: getLastUpdated(p.lastUpdated) }
+		: p,
+	),
 );

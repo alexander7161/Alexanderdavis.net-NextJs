@@ -35,7 +35,7 @@ export default connect(mapStateToProps)(
 				</Root>
 			</ContainerDiv>
 		);
-	},
+	}
 );
 
 function mapStateToProps(state: AppState) {
