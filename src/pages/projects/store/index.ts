@@ -2,22 +2,22 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { data } from "./projectData";
 
 const initialState: {
-  data: ProjectFromAPI[];
-  error: Error | null;
+	data: ProjectFromAPI[];
+	error: Error | null;
 } = {
-  data,
-  error: null,
+	data,
+	error: null
 };
 
 const projectsSlice = createSlice({
-  name: "projects",
-  initialState,
-  reducers: {
-	updateProjects(state, action: PayloadAction<ProjectFromAPI[]>) {
-		state.data = action.payload;
-		state.error = null;
-	},
-  },
+	name: "projects",
+	initialState,
+	reducers: {
+		updateProjects(state, action: PayloadAction<ProjectFromAPI[]>) {
+			state.data = action.payload;
+			state.error = null;
+		}
+	}
 });
 // Extract the action creators object and the reducer
 const { actions, reducer } = projectsSlice;

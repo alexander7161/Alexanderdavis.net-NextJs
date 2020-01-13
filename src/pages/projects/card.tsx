@@ -1,9 +1,9 @@
-import { CardActions, CardContent, Typography } from "@material-ui/core";
-import React from "react";
 import Image from "react-image-webp";
-import styled from "styled-components";
 import CardContainer from "../../components/Card";
 import CardButtons from "./CardButtons";
+import { CardActions, CardContent, Typography } from "@material-ui/core";
+import React from "react";
+import styled from "styled-components";
 
 const Card = styled(CardContainer)`
 	&& {
