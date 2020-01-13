@@ -5,6 +5,7 @@ import { useHistory, useLocation } from "react-router";
 import styled from "styled-components";
 
 const Root = styled.div`
+	position: fixed;
 	width: 100%;
 	bottom: 0px;
 	border-top: 0.5px solid lightgray;
