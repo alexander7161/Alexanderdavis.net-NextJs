@@ -30,7 +30,7 @@
 		"redux": "^4.0.5",
 		"redux-thunk": "^2.3.0",
 		"reselect": "^4.0.0",
-		"styled-components": "^4.4.1",
+		"styled-components": "^5.0.0",
 		"ts-jest": "^24.3.0",
 		"tslint": "^5.20.1",
 		"tslint-react": "^4.1.0",
