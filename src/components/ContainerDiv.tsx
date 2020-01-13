@@ -11,7 +11,7 @@ export const ContentContainer = styled.div`
 `;
 
 export const ContentRoot = styled(Container)`
-	margin: 16px 0px;
+	margin: 16px auto;
 `;
 
 const ContainerDiv: React.FC = ({ children }) => {
