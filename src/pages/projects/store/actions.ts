@@ -1,7 +1,7 @@
-import { Action } from "redux";
-import { ThunkAction } from "redux-thunk";
 import { AppState } from "../../../configureStore";
 import { updateProjects } from "./index";
+import { Action } from "redux";
+import { ThunkAction } from "redux-thunk";
 import { selectProjects } from "./selectors";
 
 export function updateGithubUpdated(): ThunkAction<
