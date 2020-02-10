@@ -197,5 +197,16 @@ export const hackathonData: Hackathon[] = [
 			building: "Väre"
 		},
 		winner: true
+	},
+	{
+		name: "IC Hack 20",
+		date: new Date("8 February 2020"),
+		location: {
+			city: "London",
+			country: "United Kingdom",
+			countryCode: "UK",
+			pos: { lat: 51.498894, lng: -0.174824 }
+		},
+		winner: false
 	}
 ];
