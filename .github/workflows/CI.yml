@@ -66,3 +66,8 @@ jobs:
           npm run tsc --prefix ./deploy/
       - name: deploy
         run: node ./deploy/build/deploy.js
+        env:
+          HOST: ${{ secrets.HOST }}
+          HOST_PATH: ${{ secrets.HOST_PATH }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          PASSWORD: ${{ secrets.PASSWORD }}
