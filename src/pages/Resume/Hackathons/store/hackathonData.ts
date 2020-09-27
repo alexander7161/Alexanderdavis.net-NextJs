@@ -6,9 +6,9 @@ export const hackathonData: Hackathon[] = [
 			city: "London",
 			country: "United Kingdom",
 			countryCode: "UK",
-			pos: { lat: 51.527991, lng: -0.102689 }
+			pos: { lat: 51.527991, lng: -0.102689 },
 		},
-		winner: true
+		winner: true,
 	},
 	{
 		name: "Anvil Hack IV",
@@ -17,9 +17,9 @@ export const hackathonData: Hackathon[] = [
 			city: "London",
 			country: "United Kingdom",
 			countryCode: "UK",
-			pos: { lat: 51.47441, lng: -0.035227 }
+			pos: { lat: 51.47441, lng: -0.035227 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "HEX",
@@ -29,9 +29,9 @@ export const hackathonData: Hackathon[] = [
 			country: "The Netherlands",
 			countryCode: "NL",
 			building: "Veemgebouw",
-			pos: { lat: 51.447977, lng: 5.454147 }
+			pos: { lat: 51.447977, lng: 5.454147 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "Copenhacks",
@@ -41,9 +41,9 @@ export const hackathonData: Hackathon[] = [
 			country: "Denmark",
 			countryCode: "DK",
 			building: "Microsoft",
-			pos: { lat: 55.773061, lng: 12.508757 }
+			pos: { lat: 55.773061, lng: 12.508757 },
 		},
-		winner: true
+		winner: true,
 	},
 	{
 		name: "TechCrunch",
@@ -53,9 +53,9 @@ export const hackathonData: Hackathon[] = [
 			country: "France",
 			countryCode: "FR",
 			pos: { lat: 48.832552, lng: 2.285777 },
-			building: "Paris Expo"
+			building: "Paris Expo",
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "HackUPC",
@@ -65,9 +65,9 @@ export const hackathonData: Hackathon[] = [
 			country: "Spain",
 			countryCode: "ES",
 			building: "Polytechnic University of Catalonia",
-			pos: { lat: 41.38801, lng: 2.113428 }
+			pos: { lat: 41.38801, lng: 2.113428 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "Jacobs Hack",
@@ -76,9 +76,9 @@ export const hackathonData: Hackathon[] = [
 			city: "Bremen",
 			country: "Germany",
 			countryCode: "DE",
-			pos: { lat: 53.16777, lng: 8.654418 }
+			pos: { lat: 53.16777, lng: 8.654418 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "Facemoji Keyjam",
@@ -87,9 +87,9 @@ export const hackathonData: Hackathon[] = [
 			city: "London",
 			country: "United Kingdom",
 			countryCode: "UK",
-			pos: { lat: 51.532412, lng: -0.122151 }
+			pos: { lat: 51.532412, lng: -0.122151 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "Junction",
@@ -99,9 +99,9 @@ export const hackathonData: Hackathon[] = [
 			country: "Finland",
 			countryCode: "FI",
 			building: "Dipoli",
-			pos: { lat: 60.185083, lng: 24.832415 }
+			pos: { lat: 60.185083, lng: 24.832415 },
 		},
-		winner: false
+		winner: false,
 	},
 
 	{
@@ -112,9 +112,9 @@ export const hackathonData: Hackathon[] = [
 			country: "United Kingdom",
 			countryCode: "UK",
 			building: "Bush House",
-			pos: { lat: 51.51266, lng: -0.117123 }
+			pos: { lat: 51.51266, lng: -0.117123 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "IC Hack 19",
@@ -123,9 +123,9 @@ export const hackathonData: Hackathon[] = [
 			city: "London",
 			country: "United Kingdom",
 			countryCode: "UK",
-			pos: { lat: 51.498894, lng: -0.174824 }
+			pos: { lat: 51.498894, lng: -0.174824 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "START Hack",
@@ -134,9 +134,9 @@ export const hackathonData: Hackathon[] = [
 			city: "St Gallen",
 			country: "Switzerland",
 			countryCode: "CH",
-			pos: { lat: 47.432692, lng: 9.376211 }
+			pos: { lat: 47.432692, lng: 9.376211 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "EU-FOSSA 2",
@@ -146,9 +146,9 @@ export const hackathonData: Hackathon[] = [
 			country: "Belgium",
 			countryCode: "BE",
 			building: "Silversquare Triomphe",
-			pos: { lat: 50.817464, lng: 4.395953 }
+			pos: { lat: 50.817464, lng: 4.395953 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "Infrahack",
@@ -158,9 +158,9 @@ export const hackathonData: Hackathon[] = [
 			country: "United Kingdom",
 			countryCode: "UK",
 			building: "Fujitsu",
-			pos: { lat: 51.517685, lng: -0.155302 }
+			pos: { lat: 51.517685, lng: -0.155302 },
 		},
-		winner: true
+		winner: true,
 	},
 	{
 		name: "Everest Hack",
@@ -170,21 +170,21 @@ export const hackathonData: Hackathon[] = [
 			country: "Nepal",
 			countryCode: "NP",
 			building: "NAMI College",
-			pos: { lat: 27.719929, lng: 85.383357 }
+			pos: { lat: 27.719929, lng: 85.383357 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
-		name: "Hack Zurich",
+		name: "Hack Zurich 2019",
 		date: new Date("27 September 2019"),
 		location: {
 			city: "Zurich",
 			country: "Switzerland",
 			countryCode: "CH",
 			building: "Technopark",
-			pos: { lat: 47.390133, lng: 8.515795 }
+			pos: { lat: 47.390133, lng: 8.515795 },
 		},
-		winner: false
+		winner: false,
 	},
 	{
 		name: "Junction",
@@ -194,9 +194,9 @@ export const hackathonData: Hackathon[] = [
 			country: "Finland",
 			countryCode: "FI",
 			pos: { lat: 60.185035, lng: 24.824887 },
-			building: "Väre"
+			building: "Väre",
 		},
-		winner: true
+		winner: true,
 	},
 	{
 		name: "IC Hack 20",
@@ -205,8 +205,19 @@ export const hackathonData: Hackathon[] = [
 			city: "London",
 			country: "United Kingdom",
 			countryCode: "UK",
-			pos: { lat: 51.498894, lng: -0.174824 }
+			pos: { lat: 51.498894, lng: -0.174824 },
 		},
-		winner: false
-	}
+		winner: false,
+	},
+	{
+		name: "Hack Zurich 2020",
+		date: new Date("18 September 2020"),
+		location: {
+			city: "Zurich",
+			country: "Switzerland",
+			countryCode: "CH",
+			pos: { lat: 47.390133, lng: 8.515795 },
+		},
+		winner: false,
+	},
 ];
