@@ -55,6 +55,7 @@ jobs:
     needs: [test, build]
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - uses: actions/download-artifact@master
         with:
           name: build
@@ -65,3 +66,8 @@ jobs:
           npm run tsc --prefix ./deploy/
       - name: deploy
         run: node ./deploy/build/deploy.js
+        env:
+          HOST: ${{ secrets.HOST }}
+          HOST_PATH: ${{ secrets.HOST_PATH }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          PASSWORD: ${{ secrets.PASSWORD }}
