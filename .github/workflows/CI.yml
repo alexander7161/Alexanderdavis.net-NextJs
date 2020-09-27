@@ -24,7 +24,7 @@ jobs:
       - name: Tests
         run: npm run test
   build:
-    if: github.ref == 'refs/heads/master' OR github.ref == 'refs/heads/develop'
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop'
     name: Build
     runs-on: ubuntu-latest
     steps:
@@ -38,7 +38,7 @@ jobs:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-  
+            ${{ runner.os }}-node-
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
@@ -48,9 +48,12 @@ jobs:
         with:
           name: build
           path: build
-    deploy:
-      if: github.ref == 'refs/heads/master'
-      needs: [test, build]
+  deploy:
+    name: Deploy
+    if: github.ref == 'refs/heads/master'
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/download-artifact@master
         with:
           name: build
@@ -61,4 +64,3 @@ jobs:
           npm run tsc --prefix ./deploy/
       - name: deploy
         run: node ./deploy/build/deploy.js
-
