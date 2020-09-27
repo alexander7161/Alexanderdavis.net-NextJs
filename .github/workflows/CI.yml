@@ -1,5 +1,5 @@
 name: CI
-on: [push]
+on: push
 jobs:
   test:
     name: Lint and Test
@@ -10,9 +10,55 @@ jobs:
         uses: actions/setup-node@master
         with:
           node-version: "12.x"
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
       - name: Lint
         run: npm run lint
       - name: Tests
         run: npm run test
+  build:
+    if: github.ref == 'refs/heads/master' OR github.ref == 'refs/heads/develop'
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: "12.x"
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-  
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - uses: actions/upload-artifact@master
+        with:
+          name: build
+          path: build
+    deploy:
+      if: github.ref == 'refs/heads/master'
+      needs: [test, build]
+      - uses: actions/download-artifact@master
+        with:
+          name: build
+          path: build
+      - name: build deploy
+        run: |
+          npm install --prefix ./deploy/
+          npm run tsc --prefix ./deploy/
+      - name: deploy
+        run: node ./deploy/build/deploy.js
+
