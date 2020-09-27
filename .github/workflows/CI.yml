@@ -1,0 +1,19 @@
+name: CI
+jobs:
+  test:
+    name: Lint, Test and Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: "12.x"
+      - name: Install dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Tests
+        run: npm run test
+      - name: build
+        run: npm run build
