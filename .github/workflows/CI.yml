@@ -1,0 +1,73 @@
+name: CI
+on: push
+jobs:
+  test:
+    name: Lint and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: "12.x"
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Tests
+        run: npm run test
+  build:
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop'
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: "12.x"
+      - uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - uses: actions/upload-artifact@master
+        if: github.ref == 'refs/heads/master'
+        with:
+          name: build
+          path: build
+  deploy:
+    name: Deploy
+    if: github.ref == 'refs/heads/master'
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/download-artifact@master
+        with:
+          name: build
+          path: build
+      - name: build deploy
+        run: |
+          npm install --prefix ./deploy/
+          npm run tsc --prefix ./deploy/
+      - name: deploy
+        run: node ./deploy/build/deploy.js
+        env:
+          HOST: ${{ secrets.HOST }}
+          HOST_PATH: ${{ secrets.HOST_PATH }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          PASSWORD: ${{ secrets.PASSWORD }}
