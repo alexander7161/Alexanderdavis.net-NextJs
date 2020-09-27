@@ -45,6 +45,7 @@ jobs:
       - name: Build
         run: npm run build
       - uses: actions/upload-artifact@master
+        if: github.ref == 'refs/heads/master'
         with:
           name: build
           path: build
