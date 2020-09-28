@@ -1,0 +1,612 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resume snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sc-AxjAm iuKVD"
+  >
+    <div
+      class="MuiContainer-root sc-AxirZ ceifME MuiContainer-disableGutters MuiContainer-maxWidthMd"
+    >
+      <h5
+        class="MuiTypography-root sc-AxhCb cxcKnO MuiTypography-h5 MuiTypography-gutterBottom"
+      >
+        Hackathons (19 Total)
+      </h5>
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Hack Zurich 2020
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  9/18/2020
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Zurich, Switzerland
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  IC Hack 20
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  2/8/2020
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                London, United Kingdom
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Junction
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  11/15/2019
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Helsinki, Finland
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Hack Zurich 2019
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  9/27/2019
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Zurich, Switzerland
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Everest Hack
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  7/19/2019
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Kathmandu, Nepal
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Infrahack
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  5/16/2019
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                London, United Kingdom
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  EU-FOSSA 2
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  5/4/2019
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Brussels, Belgium
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  START Hack
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  3/8/2019
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                St Gallen, Switzerland
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  IC Hack 19
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  1/26/2019
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                London, United Kingdom
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  HackKing's 5.0
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  12/8/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                London, United Kingdom
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Junction
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  11/23/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Helsinki, Finland
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Facemoji Keyjam
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  11/17/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                London, United Kingdom
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Jacobs Hack
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  11/3/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Bremen, Germany
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  HackUPC
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  10/19/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Barcelona, Spain
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  TechCrunch
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  5/25/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Paris, France
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Copenhacks
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  4/7/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Copenhagen, Denmark
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  HEX
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  3/16/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                Eindhoven, The Netherlands
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  Anvil Hack IV
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  2/24/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                London, United Kingdom
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+        >
+          <div
+            class="MuiPaper-root MuiCard-root sc-AxiKw eXeutq MuiPaper-elevation1 MuiPaper-rounded"
+          >
+            <div
+              class="MuiCardContent-root"
+            >
+              <div
+                style="display: flex; justify-content: space-between; align-items: flex-start;"
+              >
+                <h2
+                  class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom"
+                >
+                  HackCity
+                </h2>
+                <p
+                  class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+                >
+                  2/17/2018
+                </p>
+              </div>
+              <p
+                class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
+              >
+                London, United Kingdom
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
