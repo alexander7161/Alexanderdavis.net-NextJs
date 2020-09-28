@@ -1,5 +1,4 @@
-import React from "react";
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { ThemeProvider as SCThemeProvider } from "styled-components";
 import {
 	createMuiTheme,

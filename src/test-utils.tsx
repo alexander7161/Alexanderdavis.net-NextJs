@@ -7,11 +7,11 @@ import ThemeProvider from "./Providers/ThemeProvider"
 
 const AllTheProviders = ({ children } : {children:ReactNode}) => {
   return (
-    <Router>
+	<Router>
 		<Provider store={store}>
 			<ThemeProvider>
-        {children}
-        </ThemeProvider>
+		{children}
+		</ThemeProvider>
 		</Provider>
 	</Router>
   )
