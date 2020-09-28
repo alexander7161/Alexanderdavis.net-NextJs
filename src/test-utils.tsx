@@ -17,7 +17,7 @@ const AllTheProviders = ({ children } : {children:ReactNode}) => {
   )
 }
 
-const customRender = (ui, options?) =>
+const customRender = (ui: any, options?: any) =>
   render(ui, { wrapper: AllTheProviders, ...options })
 
 // re-export everything
