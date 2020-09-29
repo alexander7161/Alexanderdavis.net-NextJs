@@ -73,3 +73,16 @@ jobs:
           HOST_PATH: ${{ secrets.HOST_PATH }}
           FTP_USER: ${{ secrets.FTP_USER }}
           PASSWORD: ${{ secrets.PASSWORD }}
+  deploy-firebase:
+    name: Deploy firebase
+    if: github.ref == 'refs/heads/master'
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Deploy to Firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
