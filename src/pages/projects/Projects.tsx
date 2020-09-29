@@ -1,12 +1,19 @@
 import { Grid } from "@material-ui/core";
-import React from "react";
-import { useSelector } from "react-redux";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import ContainerDiv from "../../components/ContainerDiv";
 import Card from "./card";
 import { getProjectsWithLastUpdated } from "./store/selectors";
+import { updateGithubUpdated } from "./store/actions";
 
 const Projects = () => {
+	const dispatch = useDispatch();
 	const projects = useSelector(getProjectsWithLastUpdated);
+
+	useEffect(() => {
+		dispatch(updateGithubUpdated());
+	}, [dispatch]);
+
 	return (
 		<ContainerDiv>
 			<Grid container={true} spacing={2}>

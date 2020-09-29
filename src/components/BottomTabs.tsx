@@ -26,7 +26,7 @@ const BottomTabs = () => {
 	const history = useHistory();
 	const index = useTabIndex();
 
-	const handleChange = (event: any, value: number) => {
+	const handleChange = (_event: any, value: number) => {
 		switch (value) {
 			case 0:
 				history.push("/");
