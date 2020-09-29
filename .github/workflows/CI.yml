@@ -23,6 +23,8 @@ jobs:
         run: npm run lint
       - name: Tests
         run: npm run test
+      - name: TSC
+        run: npm run tsc
   build:
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop'
     name: Build

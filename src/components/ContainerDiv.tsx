@@ -6,7 +6,7 @@ export const ContentContainer = styled.div`
 	overflow-y: scroll;
 	overflow-x: hidden;
 	height: calc(
-		100vh - ${props => props.theme.mixins.toolbar.minHeight}px - 72px
+		100vh - ${(props) => props.theme.mixins.toolbar.minHeight}px - 72px
 	);
 `;
 
@@ -14,7 +14,11 @@ export const ContentRoot = styled(Container)`
 	margin: 16px auto;
 `;
 
-const ContainerDiv: React.FC = ({ children }) => {
+const ContainerDiv = ({
+	children,
+}: {
+	children: NonNullable<React.ReactNode>;
+}) => {
 	return (
 		<ContentContainer>
 			<ContentRoot maxWidth="md" disableGutters={true}>
