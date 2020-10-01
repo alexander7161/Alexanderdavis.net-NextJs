@@ -50,7 +50,7 @@
 	},
 	"devDependencies": {
 		"@testing-library/react": "^11.0.4",
-		"@types/classnames": "^2.2.9",
+		"@types/classnames": "^2.2.10",
 		"@types/enzyme": "^3.10.7",
 		"@types/react-router": "^5.1.8",
 		"@types/react-router-dom": "^5.1.3",
