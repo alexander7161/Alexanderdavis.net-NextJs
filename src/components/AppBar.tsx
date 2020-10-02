@@ -12,7 +12,7 @@ const StyledA = styled.a`
 const ButtonLink = ({
 	href,
 	title,
-	type
+	type,
 }: {
 	href: string;
 	title: string;

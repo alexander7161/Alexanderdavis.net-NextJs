@@ -1,3 +1,4 @@
+import { createBrowserHistory } from "history";
 import React from "react";
 import ReactDOM from "react-dom";
 import ReactGA from "react-ga";
@@ -15,6 +16,8 @@ import App from "./App";
 const history = createBrowserHistory();
 
 ReactGA.initialize("UA-44297367-1");
+
+const history = createBrowserHistory();
 
 ReactDOM.render(
 	<Router history={history}>
