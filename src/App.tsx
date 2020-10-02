@@ -6,10 +6,10 @@ import {
 	faGithub,
 	faJava,
 	faLastfm,
-	faLinkedin
+	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route } from "react-router";
 import SwipeableRoutes from "react-swipeable-routes";
 import AppBar from "./components/AppBar";
 import BottomTabs from "./components/BottomTabs";
@@ -28,7 +28,7 @@ const App = () => {
 			<SwipeableRoutes
 				style={{
 					WebkitOverflowScrolling: "touch", // iOS momentum scrolling
-					overflowY: "hidden"
+					overflowY: "hidden",
 				}}
 			>
 				<Route path="/" component={Projects} />

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactGA from "react-ga";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 
 export const usePageViews = () => {
 	const location = useLocation();
