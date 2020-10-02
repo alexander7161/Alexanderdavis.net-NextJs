@@ -1,4 +1,3 @@
-import { createBrowserHistory } from "history";
 import React from "react";
 import ReactDOM from "react-dom";
 import ReactGA from "react-ga";
@@ -12,8 +11,6 @@ import ThemeProvider from "./Providers/ThemeProvider";
 import store from "./configureStore";
 import App from "./App";
 // import * as serviceWorker from "./serviceWorker";
-
-const history = createBrowserHistory();
 
 ReactGA.initialize("UA-44297367-1");
 
