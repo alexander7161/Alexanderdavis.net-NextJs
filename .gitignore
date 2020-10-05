@@ -22,3 +22,11 @@ chrome-user-data
 .vscode
 *.swp
 *.swo
+.next
+*-error.log
+coverage/
+out/
+.firebase/
+firebase-debug.log
+dist
+.envrc

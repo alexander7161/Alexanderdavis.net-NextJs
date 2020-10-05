@@ -1,4 +1,3 @@
-import Image from "react-image-webp";
 import CardContainer from "../../components/Card";
 import CardButtons from "./CardButtons";
 import { CardActions, CardContent, Typography } from "@material-ui/core";
@@ -20,27 +19,20 @@ const Card = styled(CardContainer)`
 	}
 `;
 
-const StyledImage = styled(Image)`
-	&& {
-		height: auto;
-		width: 100%;
-		display: block;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+const StyledImage = styled.picture`
+	width: 100%;
+	height: auto;
+	object-fit: contain;
 `;
 
-const StyledCardActions = styled(CardActions)`
-	&& {
-		padding: 0px 4px 4px 0px;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		background-color: rgba(0, 0, 0, 0.03);
-		border-top: 1px solid rgba(0, 0, 0, 0.125);
-		display: block;
-	}
+const StyledCardActions = styled.div`
+	padding: 0px 4px 4px 0px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.03);
+	border-top: 1px solid rgba(0, 0, 0, 0.125);
+	display: block;
 `;
 
 const LastUpdatedText = styled(Typography)`
@@ -56,16 +48,16 @@ export default ({ project }: { project: Project }) => {
 		description,
 		lastUpdated,
 		dateCreated,
-		lastUpdatedString
+		lastUpdatedString,
 	} = project;
 	return (
 		<Card>
-			<StyledImage
-				alt={title}
-				title={title}
-				src={require(`./img/${img}.png`)}
-				webp={require(`./img/${img}.webp`)}
-			/>
+			<StyledImage title={title}>
+				<source srcSet={require(`./img/${img}.png?webp`)} type="image/webp" />
+				<source srcSet={require(`./img/${img}.png`)} type="image/png" />
+				<img width="100%" height="auto" src={require(`./img/${img}.png`)} />
+			</StyledImage>
+
 			<CardContent>
 				<Typography gutterBottom={true} variant="h5" component="h2">
 					{title}
