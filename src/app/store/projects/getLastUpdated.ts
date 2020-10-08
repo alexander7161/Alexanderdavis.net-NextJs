@@ -15,7 +15,7 @@ export const getLastUpdated = (lastUpdated: Date): string => {
 
 export const getLastUpdatedString = (
 	diff: number,
-	timeType: string,
+	timeType: string
 ): string => {
 	return `${diff} ${timeType}${diff === 1 ? "" : "s"} ago`;
 };

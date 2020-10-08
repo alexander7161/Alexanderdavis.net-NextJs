@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 declare module "enzyme-adapter-react-16" {
 	export = Index;
 	declare class Index {

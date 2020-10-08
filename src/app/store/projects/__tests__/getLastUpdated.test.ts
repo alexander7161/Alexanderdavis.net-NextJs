@@ -1,4 +1,4 @@
-import { getLastUpdated, getLastUpdatedString } from "../getLastUpdated";
+import { getLastUpdatedString } from "../getLastUpdated";
 
 it("getLastUpdatedString 1 day", () => {
 	expect(getLastUpdatedString(1, "day")).toEqual("1 day ago");
