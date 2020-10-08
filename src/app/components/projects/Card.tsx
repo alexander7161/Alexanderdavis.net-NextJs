@@ -1,6 +1,6 @@
 import CardContainer from "../../components/Card";
 import CardButtons from "./CardButtons";
-import { CardActions, CardContent, Typography } from "@material-ui/core";
+import { CardContent, Typography } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
 

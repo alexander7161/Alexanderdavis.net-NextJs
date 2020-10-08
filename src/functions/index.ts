@@ -1,5 +1,5 @@
 import * as functions from "firebase-functions";
-import * as next from "next";
+import next from "next";
 
 const app = next({
 	dev: process.env.NODE_ENV !== "production",

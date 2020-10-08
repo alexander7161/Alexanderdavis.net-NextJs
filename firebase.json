@@ -4,15 +4,7 @@
 		"indexes": "firestore.indexes.json"
 	},
 	"functions": {
-		"source": "dist/functions",
-		"predeploy": [
-			"yarn lint",
-			"yarn typecheck-app",
-			"yarn build-functions",
-			"yarn build-app",
-			"yarn copy-deps",
-			"yarn install-deps"
-		]
+		"source": "dist/functions"
 	},
 	"hosting": {
 		"public": "dist/public",

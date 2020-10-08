@@ -22,21 +22,9 @@ const useTabIndex = (router: NextRouter) => {
 const BottomTabs = () => {
 	const router = useRouter();
 	const index = useTabIndex(router);
-	console.log(index);
 
-	const handleChange = (_event: any, value: number) => {
+	const handleChange = (_event: unknown, value: number) =>
 		router.replace(`/?page=${value}`, "/");
-
-		// switch (value) {
-		// 	case 0:
-		// 		router.replace("/?page=Projects", "/");
-		// 		break;
-		// 	case 1:
-		// 		router.replace("/?page=Resume", "/");
-		// 		break;
-		// 	default:
-		// }
-	};
 
 	return (
 		<Root>

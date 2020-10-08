@@ -10,7 +10,7 @@ const HackathonCard = ({ hackathon: h }: { hackathon: Hackathon }) => {
 					style={{
 						display: "flex",
 						justifyContent: "space-between",
-						alignItems: "flex-start"
+						alignItems: "flex-start",
 					}}
 				>
 					<Typography gutterBottom={true} variant="h5" component="h2">
