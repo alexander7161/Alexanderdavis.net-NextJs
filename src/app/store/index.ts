@@ -11,7 +11,7 @@ const reducers = combineReducers({
 
 export type AppState = ReturnType<typeof reducers>;
 
-const makeStore: MakeStore<AppState> = () =>
+export const makeStore: MakeStore<AppState> = () =>
 	createStore(reducers, applyMiddleware(thunk, ...getDefaultMiddleware()));
 
 export const wrapper = createWrapper<AppState>(makeStore, { debug: true });
