@@ -45,11 +45,7 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
       - name: Build
-        run: |
-          yarn build-functions
-          yarn build-app
-          yarn copy-deps
-          yarn install-deps
+        run: build-prod
       - uses: actions/upload-artifact@master
         if: github.ref == 'refs/heads/master'
         with:

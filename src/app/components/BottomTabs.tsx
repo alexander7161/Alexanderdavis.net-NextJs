@@ -1,6 +1,6 @@
 import { Tab, Tabs } from "@material-ui/core";
 import { List as ListIcon, Person as PersonIcon } from "@material-ui/icons";
-import { useRouter, NextRouter } from "next/router";
+import { useRouter } from "next/router";
 
 import React from "react";
 // import { useHistory, useLocation } from "react-router";
@@ -15,13 +15,9 @@ const Root = styled.div`
 	background-color: white;
 `;
 
-const useTabIndex = (router: NextRouter) => {
-	return Number(router.query.page);
-};
-
 const BottomTabs = () => {
 	const router = useRouter();
-	const index = useTabIndex(router);
+	const index = Number(router.query.page);
 
 	const handleChange = (_event: unknown, value: number) =>
 		router.replace(`/?page=${value}`, "/");

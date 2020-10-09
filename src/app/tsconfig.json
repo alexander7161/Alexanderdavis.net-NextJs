@@ -1,26 +1,40 @@
 {
-	"compilerOptions": {
-		"jsx": "react",
-		"lib": ["dom", "es2017"],
-		"module": "esnext",
-		"moduleResolution": "node",
-		"noEmit": true,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"preserveConstEnums": true,
-		"removeComments": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strict": true,
-		"target": "esnext",
-		"allowSyntheticDefaultImports": true,
-		"esModuleInterop": true,
-		"allowJs": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"typeRoots": ["types"]
-	},
-	"include": ["./**/*", "./**/**/*"],
-	"exclude": ["node_modules"]
+  "compilerOptions": {
+    "jsx": "preserve",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "types": [
+      "jest"
+    ],
+    "typeRoots": [
+      "types",
+      "../../node_modules/@types"
+    ]
+  },
+  "include": [
+    "./**/*",
+    "./**/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

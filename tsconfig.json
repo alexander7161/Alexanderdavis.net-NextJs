@@ -10,11 +10,6 @@
 		"noUnusedParameters": true,
 		"noImplicitReturns": true,
 		"noFallthroughCasesInSwitch": true,
-		"allowSyntheticDefaultImports": true,
-		"lib": ["dom", "esnext"],
-		"esModuleInterop": true,
-
-		"jsx": "react"
-	},
-	"exclude": ["node_modules"]
+		"allowSyntheticDefaultImports": true
+	}
 }
