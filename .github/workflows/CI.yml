@@ -43,9 +43,9 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install dependencies
         if: steps.cache.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: npm ci
       - name: Build
-        run: build-prod
+        run: npm run build
       - uses: actions/upload-artifact@master
         if: github.ref == 'refs/heads/master'
         with:
