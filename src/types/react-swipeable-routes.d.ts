@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 declare module "react-swipeable-routes" {
 	export = Index;
 	declare class Index extends React.Component<PropsType, any> {

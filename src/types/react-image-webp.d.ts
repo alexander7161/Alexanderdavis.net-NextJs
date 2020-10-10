@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 declare module "react-image-webp" {
 	export default class Default extends React.Component<PropsType, any> {
 		constructor(...args: any[]);

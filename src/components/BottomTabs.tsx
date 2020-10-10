@@ -1,7 +1,9 @@
 import { Tab, Tabs } from "@material-ui/core";
 import { List as ListIcon, Person as PersonIcon } from "@material-ui/icons";
+import { useRouter } from "next/router";
+
 import React from "react";
-import { useHistory, useLocation } from "react-router";
+// import { useHistory, useLocation } from "react-router";
 import styled from "styled-components";
 
 const Root = styled.div`
@@ -13,30 +15,12 @@ const Root = styled.div`
 	background-color: white;
 `;
 
-const useTabIndex = () => {
-	const location = useLocation();
-	if (location.pathname === "/resume") {
-		return 1;
-	} else {
-		return 0;
-	}
-};
-
 const BottomTabs = () => {
-	const history = useHistory();
-	const index = useTabIndex();
+	const router = useRouter();
+	const index = Number(router.query.page ?? 0);
 
-	const handleChange = (_event: any, value: number) => {
-		switch (value) {
-			case 0:
-				history.push("/");
-				break;
-			case 1:
-				history.push("/resume");
-				break;
-			default:
-		}
-	};
+	const handleChange = (_event: unknown, value: number) =>
+		router.replace(`/?page=${value}`, value === 0 ? "/" : "/resume");
 
 	return (
 		<Root>
