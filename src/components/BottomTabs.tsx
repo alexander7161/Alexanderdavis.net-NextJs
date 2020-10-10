@@ -17,10 +17,10 @@ const Root = styled.div`
 
 const BottomTabs = () => {
 	const router = useRouter();
-	const index = Number(router.query.page);
+	const index = Number(router.query.page ?? 0);
 
 	const handleChange = (_event: unknown, value: number) =>
-		router.replace(`/?page=${value}`, "/");
+		router.replace(`/?page=${value}`, value === 0 ? "/" : "/resume");
 
 	return (
 		<Root>

@@ -1,5 +1,5 @@
 import React from "react";
-import ContainerDiv from "../../components/ContainerDiv";
+import ContainerDiv from "../ContainerDiv";
 import Hackathons from "./Hackathons";
 
 export default () => {

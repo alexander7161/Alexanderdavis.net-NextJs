@@ -49,8 +49,8 @@ jobs:
       - uses: actions/upload-artifact@master
         if: github.ref == 'refs/heads/master'
         with:
-          name: dist
-          path: dist
+          name: build
+          path: .next
   deploy:
     name: Deploy
     if: github.ref == 'refs/heads/master'
@@ -60,8 +60,8 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions/download-artifact@master
         with:
-          name: dist
-          path: dist
+          name: build
+          path: .next
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:

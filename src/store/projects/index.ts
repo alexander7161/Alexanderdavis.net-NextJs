@@ -1,4 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { HYDRATE } from "next-redux-wrapper";
 import { data } from "./projectData";
 
 const initialState: {
@@ -17,6 +18,9 @@ const projectsSlice = createSlice({
 			state.data = action.payload;
 			state.error = null;
 		},
+	},
+	extraReducers: {
+		[HYDRATE]: (state, action) => ({ ...state, ...action.payload }),
 	},
 });
 

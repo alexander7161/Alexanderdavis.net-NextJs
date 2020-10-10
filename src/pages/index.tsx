@@ -7,6 +7,8 @@ import Container from "../components/Container";
 import AppBar from "../components/AppBar";
 import BottomTabs from "../components/BottomTabs";
 import { useRouter } from "next/router";
+import { wrapper } from "../store";
+import { updateGithubUpdated } from "../store/projects/actions";
 
 const Index: NextPage = () => {
 	const router = useRouter();
@@ -15,8 +17,10 @@ const Index: NextPage = () => {
 		<Container>
 			<AppBar />
 			<SwipeableViews
-				index={Number(router.query.page)}
-				onChangeIndex={(i) => router.replace(`/?page=${i}`, "/")}
+				index={Number(router.query.page ?? 0)}
+				onChangeIndex={(i) =>
+					router.replace(`/?page=${i}`, i === 0 ? "/" : "/resume")
+				}
 			>
 				<Projects />
 				<Resume />
@@ -25,5 +29,9 @@ const Index: NextPage = () => {
 		</Container>
 	);
 };
+
+export const getStaticProps = wrapper.getStaticProps(async ({ store }) => {
+	store.dispatch(updateGithubUpdated());
+});
 
 export default Index;

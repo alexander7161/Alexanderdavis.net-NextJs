@@ -1,12 +1,30 @@
 {
-	"name": "alexanderdavisnet-react",
-	"homepage": "https://alexanderdavis.net",
-	"version": "0.1.0",
-	"private": true,
+	"name": "with-firebase-hosting",
+	"version": "5.0.0",
+	"description": "Host Next.js SSR app on Firebase Cloud Functions with Firebase Hosting redirects.",
+	"main": "firebaseFunctions.js",
 	"engines": {
-		"node": "12"
+		"node": "10"
+	},
+	"scripts": {
+		"dev": "next src/",
+		"build": "next build src/",
+		"start": "next start src/",
+		"serve": "npm run build && firebase emulators:start --only functions,hosting",
+		"shell": "npm run build && firebase functions:shell",
+		"deploy": "firebase deploy --only functions,hosting",
+		"test": "jest",
+		"test:ci": "CI=true jest --env=jsdom",
+		"cov": "npm run test -- --coverage",
+		"lint": "eslint src/**/*.{ts,tsx}",
+		"tsc": "tsc --project src/tsconfig.json --noEmit"
 	},
 	"dependencies": {
+		"firebase-admin": "^8.9.0",
+		"firebase-functions": "^3.3.0",
+		"next": "^9.3.4",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
 		"@fortawesome/fontawesome-svg-core": "^1.2.31",
 		"@fortawesome/free-brands-svg-icons": "^5.15.0",
 		"@fortawesome/free-solid-svg-icons": "^5.15.0",
@@ -21,16 +39,11 @@
 		"@types/react-redux": "^7.1.9",
 		"@types/react-swipeable-views": "^0.13.0",
 		"connected-react-router": "^6.8.0",
-		"firebase-admin": "^9.2.0",
-		"firebase-functions": "^3.11.0",
 		"history": "^4.10.1",
 		"imagemin-optipng": "^8.0.0",
-		"next": "^9.5.3",
 		"next-optimized-images": "^2.6.2",
 		"next-redux-wrapper": "^6.0.2",
 		"next-routes": "^1.4.2",
-		"react": "^16.13.1",
-		"react-dom": "^16.13.0",
 		"react-ga": "^3.1.2",
 		"react-image-webp": "^0.7.0",
 		"react-query": "^2.23.0",
@@ -48,26 +61,12 @@
 		"typeface-roboto": "0.0.75",
 		"webp-loader": "^0.6.0"
 	},
-	"scripts": {
-		"start": "npm run dev",
-		"dev": "next src/app",
-		"test": "jest --coverage",
-		"tsc": "run-p tsc-app tsc-functions",
-		"tsc-app": "tsc --project src/app --noEmit",
-		"tsc-functions": "tsc --project src/functions --noEmit",
-		"test:ci": "CI=true react-scripts test --env=jsdom",
-		"cov": "npm run test -- --coverage",
-		"clean": "rimraf dist",
-		"lint": "eslint src/**/*.{ts,tsx}",
-		"build-functions": "tsc --project src/functions",
-		"build-app": "next build src/app",
-		"copy-deps": "cpx \"*{package.json,package-lock.json,yarn.lock}\" \"dist/functions\" -C",
-		"install-deps": "cd dist/functions && yarn",
-		"build-public": "cpx src/public/**/*.* dist/public -C",
-		"deploy": "firebase deploy",
-		"build-prod": "run-s build-functions build-app build-public copy-deps install-deps"
-	},
 	"devDependencies": {
+		"@types/node": "^14.11.8",
+		"@types/react": "^16.9.51",
+		"firebase-functions-test": "^0.1.6",
+		"firebase-tools": "^8.6.0",
+		"typescript": "^4.0.3",
 		"@testing-library/react": "^11.0.4",
 		"@types/classnames": "^2.2.10",
 		"@types/enzyme": "^3.10.7",
@@ -92,7 +91,7 @@
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.1.2",
 		"ts-jest": "23.10.5",
-		"tslint-config-prettier": "^1.18.0",
-		"typescript": "^4.0.3"
-	}
+		"tslint-config-prettier": "^1.18.0"
+	},
+	"license": "MIT"
 }

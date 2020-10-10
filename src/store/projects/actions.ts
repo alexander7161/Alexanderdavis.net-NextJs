@@ -1,4 +1,4 @@
-import { Action } from "redux";
+import { AnyAction } from "redux";
 import { ThunkAction } from "redux-thunk";
 import { AppState } from "..";
 import { selectProjects } from "./selectors";
@@ -8,7 +8,7 @@ export function updateGithubUpdated(): ThunkAction<
 	void,
 	AppState,
 	null,
-	Action<string>
+	AnyAction
 > {
 	return async (dispatch, getState) => {
 		const oldProjects = selectProjects(getState());

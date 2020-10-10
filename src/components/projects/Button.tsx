@@ -1,4 +1,4 @@
-import WhiteIcon from "../../components/WhiteIcon";
+import WhiteIcon from "../WhiteIcon";
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { Button } from "@material-ui/core";
 import React from "react";

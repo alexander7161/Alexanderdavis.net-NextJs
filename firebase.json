@@ -3,17 +3,18 @@
 		"rules": "firestore.rules",
 		"indexes": "firestore.indexes.json"
 	},
-	"functions": {
-		"source": "dist/functions"
-	},
 	"hosting": {
-		"public": "dist/public",
+		"public": "public",
+		"ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
 		"rewrites": [
 			{
 				"source": "**",
-				"function": "nextApp"
+				"function": "nextjsFunc"
 			}
-		],
-		"predeploy": "yarn build-public"
+		]
+	},
+	"functions": {
+		"source": ".",
+		"runtime": "nodejs10"
 	}
 }

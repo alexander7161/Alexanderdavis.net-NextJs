@@ -1,6 +1,6 @@
 import { CardContent, Typography } from "@material-ui/core";
 import React from "react";
-import Card from "../../../components/Card";
+import Card from "../../Card";
 
 const HackathonCard = ({ hackathon: h }: { hackathon: Hackathon }) => {
 	return (

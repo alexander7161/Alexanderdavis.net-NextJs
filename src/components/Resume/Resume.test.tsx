@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "../../test-utils";
-import Resume from ".";
+import Resume from "../Resume";
 
 describe("Resume", () => {
 	test("snapshot", () => {
