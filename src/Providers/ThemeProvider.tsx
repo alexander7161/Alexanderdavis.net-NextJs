@@ -6,7 +6,7 @@ import {
 	MuiThemeProvider,
 } from "@material-ui/core";
 
-const theme = createMuiTheme({
+export const theme = createMuiTheme({
 	palette: {
 		primary: {
 			main: "#39D1FF",
@@ -23,6 +23,13 @@ const theme = createMuiTheme({
 });
 
 const ThemeProvider = ({ children }: { children: ReactNode }) => {
+	React.useEffect(() => {
+		// Remove the server-side injected CSS.
+		const jssStyles = document.querySelector("#jss-server-side");
+		if (jssStyles) {
+			jssStyles.parentElement.removeChild(jssStyles);
+		}
+	}, []);
 	return (
 		<MuiThemeProvider theme={theme}>
 			<SCThemeProvider theme={theme}>
