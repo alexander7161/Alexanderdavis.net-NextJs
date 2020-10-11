@@ -5,6 +5,7 @@ import React from "react";
 // import { useHistory, useLocation } from "react-router";
 import styled from "styled-components";
 import usePageIndex from "../hooks/usePageIndex";
+import { PageIndex } from "../hooks/usePageIndex/types";
 
 const Root = styled.div`
 	position: fixed;
@@ -20,6 +21,8 @@ const BottomTabs = () => {
 		current: { index },
 		next: { replace },
 	} = usePageIndex();
+	const handleChange = (_event: unknown, value: number) =>
+		replace(value as PageIndex);
 
 	return (
 		<Root>
@@ -29,7 +32,7 @@ const BottomTabs = () => {
 				centered={true}
 				variant="fullWidth"
 				value={index}
-				onChange={replace}
+				onChange={handleChange}
 				TabIndicatorProps={{ style: { top: 0 } }}
 			>
 				<Tab className="btn" label="Projects" icon={<ListIcon />} />
