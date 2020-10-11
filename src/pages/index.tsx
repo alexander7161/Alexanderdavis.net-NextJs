@@ -6,27 +6,32 @@ import Resume from "../components/Resume";
 import Container from "../components/Container";
 import AppBar from "../components/AppBar";
 import BottomTabs from "../components/BottomTabs";
-import { useRouter } from "next/router";
 import { wrapper } from "../store";
 import { updateGithubUpdated } from "../store/projects/actions";
+import usePageIndex from "../hooks/usePageIndex";
+import Head from "next/head";
 
 const Index: NextPage = () => {
-	const router = useRouter();
+	const {
+		current: { index, name },
+		next: { replace },
+	} = usePageIndex();
 
 	return (
-		<Container>
-			<AppBar />
-			<SwipeableViews
-				index={Number(router.query.page ?? 0)}
-				onChangeIndex={(i) =>
-					router.replace(`/?page=${i}`, i === 0 ? "/" : "/resume")
-				}
-			>
-				<Projects />
-				<Resume />
-			</SwipeableViews>
-			<BottomTabs />
-		</Container>
+		<>
+			<Head>
+				<title>Alexander Davis | {name}</title>
+				<meta name="theme-color" content="#2792b2" />
+			</Head>
+			<Container>
+				<AppBar />
+				<SwipeableViews index={index} onChangeIndex={replace}>
+					<Projects />
+					<Resume />
+				</SwipeableViews>
+				<BottomTabs />
+			</Container>
+		</>
 	);
 };
 

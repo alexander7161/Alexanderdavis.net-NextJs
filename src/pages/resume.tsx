@@ -1,10 +1,12 @@
-import { useRouter } from "next/router";
 import React, { useEffect } from "react";
+import usePageIndex from "../hooks/usePageIndex";
 
 const Resume = () => {
-	const router = useRouter();
+	const {
+		next: { replace },
+	} = usePageIndex();
 	useEffect(() => {
-		router.replace(`/?page=${1}`, "/resume");
+		replace();
 	}, []);
 	return <div />;
 };
