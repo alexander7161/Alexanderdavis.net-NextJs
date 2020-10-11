@@ -41,11 +41,6 @@ export default class MyDocument extends Document {
 				<Head>
 					<link rel="manifest" href="/manifest.json" />
 					<link rel="shortcut icon" href="/icon.png" />
-					<meta name="theme-color" content="#2792b2" />
-					<meta
-						name="viewport"
-						content="width=device-width, initial-scale=1, shrink-to-fit=no"
-					/>
 				</Head>
 				<body>
 					<Main />

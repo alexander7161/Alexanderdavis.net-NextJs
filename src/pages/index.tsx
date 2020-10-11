@@ -21,6 +21,7 @@ const Index: NextPage = () => {
 		<>
 			<Head>
 				<title>Alexander Davis | {name}</title>
+				<meta name="theme-color" content="#2792b2" />
 			</Head>
 			<Container>
 				<AppBar />
