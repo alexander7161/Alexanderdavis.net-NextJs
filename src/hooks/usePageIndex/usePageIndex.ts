@@ -40,8 +40,8 @@ const usePageIndex = () => {
 		next: {
 			index: nextIndex,
 			name: getPageName(nextIndex),
-			replace: () =>
-				router.replace(`/?page=${nextIndex}`, `/${getPageRoute(nextIndex)}`),
+			replace: (newIndex: PageIndex = nextIndex) =>
+				router.replace(`/?page=${newIndex}`, `/${getPageRoute(newIndex)}`),
 		},
 	};
 };
