@@ -30,6 +30,7 @@ const ThemeProvider = ({ children }: { children: ReactNode }) => {
 			jssStyles.parentElement.removeChild(jssStyles);
 		}
 	}, []);
+
 	return (
 		<MuiThemeProvider theme={theme}>
 			<SCThemeProvider theme={theme}>
