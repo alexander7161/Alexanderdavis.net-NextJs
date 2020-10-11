@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NextPage } from "next";
+import Head from "next/head";
+import ReactGA from "react-ga";
+
 import Projects from "../components/projects";
 import SwipeableViews from "react-swipeable-views";
 import Resume from "../components/Resume";
@@ -9,13 +12,16 @@ import BottomTabs from "../components/BottomTabs";
 import { wrapper } from "../store";
 import { updateGithubUpdated } from "../store/projects/actions";
 import usePageIndex from "../hooks/usePageIndex";
-import Head from "next/head";
 
 const Index: NextPage = () => {
 	const {
 		current: { index, name },
 		next: { replace },
 	} = usePageIndex();
+
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	}, [index]);
 
 	return (
 		<>
