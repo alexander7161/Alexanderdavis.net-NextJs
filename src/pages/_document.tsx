@@ -44,8 +44,8 @@ export default class MyDocument extends Document {
 		return (
 			<Html>
 				<Head>
-					<link rel="manifest" href="/manifest.json" />
-					<link rel="shortcut icon" href="/icon.png" />
+					<link rel="manifest" href={require("../public/manifest.json")} />
+					<link rel="shortcut icon" href={require("../public/icon.png")} />
 					<meta name="theme-color" content={theme.palette.primary.dark} />
 					<link
 						rel="stylesheet"
