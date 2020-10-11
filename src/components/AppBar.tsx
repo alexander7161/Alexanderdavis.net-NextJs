@@ -3,7 +3,7 @@ import { AppBar, IconButton, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
 import WhiteIcon from "./WhiteIcon";
-import { useRouter } from "next/router";
+import usePageIndex from "../hooks/usePageIndex";
 
 const StyledA = styled.a`
 	text-decoration: none;
@@ -32,13 +32,14 @@ const ButtonContainer = styled.div`
 `;
 
 export default () => {
-	const router = useRouter();
-
+	const {
+		current: { name },
+	} = usePageIndex();
 	return (
 		<AppBar position="sticky">
 			<Toolbar>
 				<Typography variant="h6" color="inherit" style={{ color: "white" }}>
-					{router.query.page === "1" ? "Resume" : "Projects"}
+					{name}
 				</Typography>
 				<ButtonContainer>
 					<ButtonLink

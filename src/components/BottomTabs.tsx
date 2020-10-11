@@ -1,10 +1,10 @@
 import { Tab, Tabs } from "@material-ui/core";
 import { List as ListIcon, Person as PersonIcon } from "@material-ui/icons";
-import { useRouter } from "next/router";
 
 import React from "react";
 // import { useHistory, useLocation } from "react-router";
 import styled from "styled-components";
+import usePageIndex from "../hooks/usePageIndex";
 
 const Root = styled.div`
 	position: fixed;
@@ -16,11 +16,10 @@ const Root = styled.div`
 `;
 
 const BottomTabs = () => {
-	const router = useRouter();
-	const index = Number(router.query.page ?? 0);
-
-	const handleChange = (_event: unknown, value: number) =>
-		router.replace(`/?page=${value}`, value === 0 ? "/" : "/resume");
+	const {
+		current: { index },
+		next: { replace },
+	} = usePageIndex();
 
 	return (
 		<Root>
@@ -30,7 +29,7 @@ const BottomTabs = () => {
 				centered={true}
 				variant="fullWidth"
 				value={index}
-				onChange={handleChange}
+				onChange={replace}
 				TabIndicatorProps={{ style: { top: 0 } }}
 			>
 				<Tab className="btn" label="Projects" icon={<ListIcon />} />
