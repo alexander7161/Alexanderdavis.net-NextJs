@@ -1,9 +1,9 @@
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { AppBar, IconButton, Toolbar, Typography } from "@material-ui/core";
 import React from "react";
-import { useLocation } from "react-router";
 import styled from "styled-components";
 import WhiteIcon from "./WhiteIcon";
+import usePageIndex from "../hooks/usePageIndex";
 
 const StyledA = styled.a`
 	text-decoration: none;
@@ -12,7 +12,7 @@ const StyledA = styled.a`
 const ButtonLink = ({
 	href,
 	title,
-	type
+	type,
 }: {
 	href: string;
 	title: string;
@@ -32,12 +32,14 @@ const ButtonContainer = styled.div`
 `;
 
 export default () => {
-	const location = useLocation();
+	const {
+		current: { name },
+	} = usePageIndex();
 	return (
 		<AppBar position="sticky">
 			<Toolbar>
 				<Typography variant="h6" color="inherit" style={{ color: "white" }}>
-					{location.pathname === "/resume" ? "Resume" : "Projects"}
+					{name}
 				</Typography>
 				<ButtonContainer>
 					<ButtonLink

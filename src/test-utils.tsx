@@ -1,25 +1,27 @@
 import React, { ReactNode } from "react";
-import { render } from "@testing-library/react";
+import { render, RenderOptions } from "@testing-library/react";
 import { Provider } from "react-redux";
 import { Router } from "react-router";
-import store from "./configureStore";
+import { makeStore } from "./store";
 import ThemeProvider from "./Providers/ThemeProvider";
 import { createBrowserHistory } from "history";
 
 const history = createBrowserHistory();
 
-const AllTheProviders = ({ children }: { children: ReactNode }) => {
+const AllTheProviders = ({ children }: { children?: ReactNode }) => {
 	return (
 		<Router history={history}>
-			<Provider store={store}>
+			<Provider store={makeStore({})}>
 				<ThemeProvider>{children}</ThemeProvider>
 			</Provider>
 		</Router>
 	);
 };
 
-const customRender = (ui: any, options?: any) =>
-	render(ui, { wrapper: AllTheProviders, ...options });
+const customRender = (
+	ui: React.ReactElement,
+	options?: Omit<RenderOptions, "queries">
+) => render(ui, { wrapper: AllTheProviders, ...options });
 
 // re-export everything
 export * from "@testing-library/react";
