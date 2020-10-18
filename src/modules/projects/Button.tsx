@@ -36,7 +36,7 @@ const Icon = styled(WhiteIcon)`
 	margin-top: auto;
 `;
 
-export default ({
+const ButtonComponent = ({
 	name,
 	URL,
 	text,
@@ -56,3 +56,5 @@ export default ({
 		</StyledButton>
 	</StyledLink>
 );
+
+export default ButtonComponent;

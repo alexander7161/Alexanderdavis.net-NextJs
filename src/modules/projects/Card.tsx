@@ -41,7 +41,7 @@ const LastUpdatedText = styled(Typography)`
 	padding-left: 4px;
 `;
 
-export default ({ project }: { project: Project }) => {
+const CardComponent = ({ project }: { project: Project }) => {
 	const {
 		title,
 		img,
@@ -77,3 +77,5 @@ export default ({ project }: { project: Project }) => {
 		</Card>
 	);
 };
+
+export default CardComponent;
