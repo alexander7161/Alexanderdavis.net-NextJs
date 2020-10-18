@@ -1,4 +1,4 @@
-import CardContainer from "../Card";
+import CardContainer from "../../components/Card";
 import CardButtons from "./CardButtons";
 import { CardContent, Typography } from "@material-ui/core";
 import React from "react";
