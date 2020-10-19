@@ -35,3 +35,5 @@ yarn-error.log*
 .vercel
 
 src/public/manifest.json
+
+src/out/
