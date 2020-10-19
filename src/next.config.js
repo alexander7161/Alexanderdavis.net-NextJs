@@ -5,7 +5,15 @@ const manifest = require("next-manifest");
 
 module.exports = withPlugins(
 	[
-		[optimizedImages],
+		[
+			optimizedImages,
+			{
+				defaultImageLoader: "responsive-loader",
+				responsive: {
+					adapter: require("responsive-loader/sharp"),
+				},
+			},
+		],
 		[css],
 		[
 			manifest,
