@@ -8,7 +8,7 @@ module.exports = withPlugins(
 		[
 			optimizedImages,
 			{
-				inlineImageLimit: 1400,
+				inlineImageLimit: 140192,
 				removeOriginalExtension: true
 			},
 		],
