@@ -1,4 +1,4 @@
-import CardContainer from "../Card";
+import CardContainer from "../../components/Card";
 import CardButtons from "./CardButtons";
 import { CardContent, Typography } from "@material-ui/core";
 import React from "react";
@@ -41,7 +41,7 @@ const LastUpdatedText = styled(Typography)`
 	padding-left: 4px;
 `;
 
-export default ({ project }: { project: Project }) => {
+const CardComponent = ({ project }: { project: Project }) => {
 	const {
 		title,
 		img,
@@ -53,8 +53,14 @@ export default ({ project }: { project: Project }) => {
 	return (
 		<Card>
 			<StyledImage title={title}>
-				<source srcSet={require(`./img/${img}.png?webp`)} type="image/webp" />
-				<source srcSet={require(`./img/${img}.png`)} type="image/png" />
+				<source
+					srcSet={require(`./img/${img}.png?webp&inline`)}
+					type="image/webp"
+				/>
+				<source
+					srcSet={require(`./img/${img}.png?inline&resize&size=310`)}
+					type="image/png"
+				/>
 				<img width="100%" height="auto" src={require(`./img/${img}.png`)} />
 			</StyledImage>
 
@@ -77,3 +83,5 @@ export default ({ project }: { project: Project }) => {
 		</Card>
 	);
 };
+
+export default CardComponent;

@@ -31,7 +31,7 @@ const ButtonContainer = styled.div`
 	position: absolute;
 `;
 
-export default () => {
+const AppBarComponent = () => {
 	const {
 		current: { name },
 	} = usePageIndex();
@@ -62,3 +62,5 @@ export default () => {
 		</AppBar>
 	);
 };
+
+export default AppBarComponent;

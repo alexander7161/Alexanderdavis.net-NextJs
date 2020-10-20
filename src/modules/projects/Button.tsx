@@ -1,4 +1,4 @@
-import WhiteIcon from "../WhiteIcon";
+import WhiteIcon from "../../components/WhiteIcon";
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { Button } from "@material-ui/core";
 import React from "react";
@@ -36,7 +36,7 @@ const Icon = styled(WhiteIcon)`
 	margin-top: auto;
 `;
 
-export default ({
+const ButtonComponent = ({
 	name,
 	URL,
 	text,
@@ -56,3 +56,5 @@ export default ({
 		</StyledButton>
 	</StyledLink>
 );
+
+export default ButtonComponent;
