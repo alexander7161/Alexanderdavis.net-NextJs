@@ -1,7 +1,7 @@
 {
-	"name": "with-firebase-hosting",
+	"name": "Alexanderdavisnet",
 	"version": "5.0.0",
-	"description": "Host Next.js SSR app on Firebase Cloud Functions with Firebase Hosting redirects.",
+	"description": "AlexanderDavisnet",
 	"main": "firebaseFunctions.js",
 	"engines": {
 		"node": "10"
@@ -59,8 +59,7 @@
 		"sharp": "^0.26.2",
 		"styled-components": "^5.1.1",
 		"typeface-roboto": "0.0.75",
-		"webp-loader": "^0.6.0",
-		"responsive-loader": "^2.2.0"
+		"webp-loader": "^0.6.0"
 	},
 	"devDependencies": {
 		"@testing-library/react": "^11.0.4",

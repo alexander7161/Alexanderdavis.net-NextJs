@@ -8,10 +8,7 @@ module.exports = withPlugins(
 		[
 			optimizedImages,
 			{
-				defaultImageLoader: "responsive-loader",
-				responsive: {
-					adapter: require("responsive-loader/sharp"),
-				},
+				inlineImageLimit: 1400,
 			},
 		],
 		[css],
