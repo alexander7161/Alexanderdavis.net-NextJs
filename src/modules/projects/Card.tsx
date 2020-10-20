@@ -54,11 +54,11 @@ const CardComponent = ({ project }: { project: Project }) => {
 		<Card>
 			<StyledImage title={title}>
 				<source
-					srcSet={require(`./img/${img}.png?webp&inline&resize&size=300&lqip`)}
+					srcSet={require(`./img/${img}.png?webp&inline`)}
 					type="image/webp"
 				/>
 				<source
-					srcSet={require(`./img/${img}.png?inline&resize&size=300&lqip`)}
+					srcSet={require(`./img/${img}.png?inline&resize&size=300`)}
 					type="image/png"
 				/>
 				<img width="100%" height="auto" src={require(`./img/${img}.png`)} />

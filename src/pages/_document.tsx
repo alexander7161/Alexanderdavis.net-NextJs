@@ -47,10 +47,6 @@ export default class MyDocument extends Document {
 				<Head>
 					<link rel="shortcut icon" href={require("../public/icon.png")} />
 					<meta name="theme-color" content={theme.palette.primary.dark} />
-					<link
-						rel="stylesheet"
-						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-					/>
 					<Manifest href="../manifest.json" />
 				</Head>
 				<body>
