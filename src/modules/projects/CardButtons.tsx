@@ -20,7 +20,7 @@ const Container = styled.div`
 	}
 `;
 
-export default ({ project }: { project: Project }) => {
+const CardButtons = ({ project }: { project: Project }) => {
 	const { title, githubURL, siteURL, downloadURL, languages } = project;
 	return (
 		<Container>
@@ -51,3 +51,5 @@ export default ({ project }: { project: Project }) => {
 		</Container>
 	);
 };
+
+export default CardButtons;

@@ -24,7 +24,7 @@ export function updateGithubUpdated(): ThunkAction<
 					if (json && json[0] && json[0].commit) {
 						return {
 							...p,
-							lastUpdated: new Date(json[0].commit.author.date),
+							lastUpdated: json[0].commit.author.date,
 						};
 					}
 				}

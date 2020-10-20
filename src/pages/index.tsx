@@ -3,9 +3,9 @@ import { NextPage } from "next";
 import Head from "next/head";
 import ReactGA from "react-ga";
 
-import Projects from "../components/projects";
+import Projects from "../modules/projects";
 import SwipeableViews from "react-swipeable-views";
-import Resume from "../components/Resume";
+import Resume from "../modules/Resume";
 import Container from "../components/Container";
 import AppBar from "../components/AppBar";
 import BottomTabs from "../components/BottomTabs";
