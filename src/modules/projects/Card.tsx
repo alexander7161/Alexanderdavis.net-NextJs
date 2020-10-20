@@ -58,7 +58,7 @@ const CardComponent = ({ project }: { project: Project }) => {
 					type="image/webp"
 				/>
 				<source
-					srcSet={require(`./img/${img}.png?inline&resize&size=300`)}
+					srcSet={require(`./img/${img}.png?inline&resize&size=310`)}
 					type="image/png"
 				/>
 				<img width="100%" height="auto" src={require(`./img/${img}.png`)} />
