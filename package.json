@@ -80,7 +80,7 @@
 		"eslint-plugin-jest": "^24.0.2",
 		"eslint-plugin-prettier": "^3.1.4",
 		"eslint-plugin-react": "^7.21.3",
-		"firebase-functions-test": "^0.1.6",
+		"firebase-functions-test": "^0.2.3",
 		"firebase-tools": "^8.6.0",
 		"jest": "23",
 		"jest-styled-components": "7.0.3",
