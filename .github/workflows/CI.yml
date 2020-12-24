@@ -37,7 +37,9 @@ jobs:
           node-version: "10.x"
       - uses: actions/cache@v2
         with:
-          path: ~/.npm
+          path: |
+              ~/.npm
+              ~/.next/cache
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
