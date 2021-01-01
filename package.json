@@ -58,7 +58,7 @@
 		"reselect": "^4.0.0",
 		"sharp": "^0.26.2",
 		"styled-components": "^5.1.1",
-		"typeface-roboto": "0.0.75",
+		"typeface-roboto": "1.1.13",
 		"webp-loader": "^0.6.0"
 	},
 	"devDependencies": {
