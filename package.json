@@ -57,7 +57,7 @@
 		"redux-thunk": "^2.3.0",
 		"reselect": "^4.0.0",
 		"sharp": "^0.26.2",
-		"styled-components": "^5.1.1",
+		"styled-components": "^5.2.1",
 		"webp-loader": "^0.6.0"
 	},
 	"devDependencies": {
