@@ -36,7 +36,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  18/09/2020
+                  mockDate
                 </p>
               </div>
               <p
@@ -67,7 +67,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  08/02/2020
+                  mockDate
                 </p>
               </div>
               <p
@@ -98,7 +98,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  15/11/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -129,7 +129,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  27/09/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -160,7 +160,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  19/07/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -191,7 +191,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  16/05/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -222,7 +222,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  04/05/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -253,7 +253,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  08/03/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -284,7 +284,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  26/01/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -315,7 +315,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  08/12/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -346,7 +346,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  23/11/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -377,7 +377,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  17/11/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -408,7 +408,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  03/11/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -439,7 +439,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  19/10/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -470,7 +470,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  25/05/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -501,7 +501,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  07/04/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -532,7 +532,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  16/03/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -563,7 +563,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  24/02/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -594,7 +594,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  17/02/2018
+                  mockDate
                 </p>
               </div>
               <p
