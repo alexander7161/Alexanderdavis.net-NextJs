@@ -8,7 +8,6 @@ import Document, {
 import React from "react";
 import { ServerStyleSheet } from "styled-components";
 import { ServerStyleSheets } from "@material-ui/styles";
-import Manifest from "next-manifest/manifest";
 import { theme } from "../Providers/ThemeProvider";
 
 export default class MyDocument extends Document {
@@ -46,8 +45,8 @@ export default class MyDocument extends Document {
 			<Html>
 				<Head>
 					<link rel="shortcut icon" href={require("../public/icon.png")} />
+					<link rel="manifest" href="/manifest.json" />
 					<meta name="theme-color" content={theme.palette.primary.dark} />
-					<Manifest href="../manifest.json" />
 				</Head>
 				<body>
 					<Main />
