@@ -2,7 +2,6 @@ import { Tab, Tabs } from "@material-ui/core";
 import { List as ListIcon, Person as PersonIcon } from "@material-ui/icons";
 
 import React from "react";
-// import { useHistory, useLocation } from "react-router";
 import styled from "styled-components";
 import usePageIndex from "../hooks/usePageIndex";
 import { PageIndex } from "../hooks/usePageIndex/types";
