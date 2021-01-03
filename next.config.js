@@ -1,6 +1,5 @@
 const withPlugins = require("next-compose-plugins");
 const optimizedImages = require("next-optimized-images");
-const css = require("@zeit/next-css");
 const manifest = require("next-manifest");
 
 module.exports = withPlugins(
@@ -8,10 +7,9 @@ module.exports = withPlugins(
 		[
 			optimizedImages,
 			{
-				removeOriginalExtension: true
+				removeOriginalExtension: true,
 			},
 		],
-		[css],
 		[
 			manifest,
 			{
