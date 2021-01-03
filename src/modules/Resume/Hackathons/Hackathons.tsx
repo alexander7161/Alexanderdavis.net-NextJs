@@ -12,7 +12,7 @@ const Heading = styled(Typography)`
 	}
 `;
 
-export default () => {
+const Hackathons = () => {
 	return (
 		<>
 			<Heading gutterBottom={true} variant="h5">
@@ -30,3 +30,5 @@ export default () => {
 		</>
 	);
 };
+
+export default Hackathons;

@@ -3,13 +3,13 @@
 exports[`Resume snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sc-bdnylx gkHqlO"
+    class="sc-bdfBwQ jZxjBy"
   >
     <div
-      class="MuiContainer-root sc-gtssRu ioejpH MuiContainer-disableGutters MuiContainer-maxWidthMd"
+      class="MuiContainer-root sc-gsTCUz blPqRi MuiContainer-disableGutters MuiContainer-maxWidthMd"
     >
       <h5
-        class="MuiTypography-root sc-hKFyIo jBwUJv MuiTypography-h5 MuiTypography-gutterBottom"
+        class="MuiTypography-root sc-hKgILt cIqpXB MuiTypography-h5 MuiTypography-gutterBottom"
       >
         Hackathons (19 Total)
       </h5>
@@ -20,7 +20,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -36,7 +36,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  9/18/2020
+                  mockDate
                 </p>
               </div>
               <p
@@ -51,7 +51,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -67,7 +67,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  2/8/2020
+                  mockDate
                 </p>
               </div>
               <p
@@ -82,7 +82,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -98,7 +98,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  11/15/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -113,7 +113,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -129,7 +129,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  9/27/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -144,7 +144,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -160,7 +160,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  7/19/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -175,7 +175,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -191,7 +191,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  5/16/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -206,7 +206,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -222,7 +222,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  5/4/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -237,7 +237,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -253,7 +253,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  3/8/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -268,7 +268,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -284,7 +284,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  1/26/2019
+                  mockDate
                 </p>
               </div>
               <p
@@ -299,7 +299,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -315,7 +315,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  12/8/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -330,7 +330,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -346,7 +346,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  11/23/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -361,7 +361,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -377,7 +377,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  11/17/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -392,7 +392,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -408,7 +408,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  11/3/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -423,7 +423,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -439,7 +439,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  10/19/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -454,7 +454,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -470,7 +470,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  5/25/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -485,7 +485,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -501,7 +501,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  4/7/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -516,7 +516,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -532,7 +532,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  3/16/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -547,7 +547,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -563,7 +563,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  2/24/2018
+                  mockDate
                 </p>
               </div>
               <p
@@ -578,7 +578,7 @@ exports[`Resume snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
         >
           <div
-            class="MuiPaper-root MuiCard-root sc-dlnjPT cmWFhd MuiPaper-elevation1 MuiPaper-rounded"
+            class="MuiPaper-root MuiCard-root sc-dlfnbm jeRdDL MuiPaper-elevation1 MuiPaper-rounded"
           >
             <div
               class="MuiCardContent-root"
@@ -594,7 +594,7 @@ exports[`Resume snapshot 1`] = `
                 <p
                   class="MuiTypography-root MuiTypography-body2 MuiTypography-colorTextSecondary"
                 >
-                  2/17/2018
+                  mockDate
                 </p>
               </div>
               <p
