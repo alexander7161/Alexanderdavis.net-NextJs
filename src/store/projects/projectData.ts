@@ -1,5 +1,13 @@
 export const data: Project[] = [
 	{
+		title: "NetWorth",
+		img: "netWorth",
+		description: "Track your net worth over time.",
+		languages: "Android",
+		downloadURL: "https://play.google.com/store/apps/details?id=com.networthrn",
+		dateCreated: "07/03/2021",
+	},
+	{
 		title: "ClosingTime",
 		img: "closingTime",
 		description:
