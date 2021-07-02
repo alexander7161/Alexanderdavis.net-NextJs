@@ -13,7 +13,8 @@ export const data: Project[] = [
 		description:
 			"Tells you when restaurants are offering closing time discounts.",
 		languages: "React",
-		siteURL: "https://closeti.me",
+		siteURL: "https://closingtime-1519505201251.web.app/",
+		githubURL: "https://github.com/alexander7161/ClosingTime-React",
 		dateCreated: "14/04/2018",
 	},
 	{
