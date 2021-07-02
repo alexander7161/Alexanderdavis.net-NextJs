@@ -76,7 +76,7 @@
 		"firebase-functions-test": "^0.2.3",
 		"firebase-tools": "^9.10.0",
 		"jest": "^26.6.3",
-		"jest-styled-components": "7.0.3",
+		"jest-styled-components": "7.0.4",
 		"npm-run-all": "^4.1.5",
 		"prettier": "^2.2.1",
 		"ts-jest": "^26.5.2",
