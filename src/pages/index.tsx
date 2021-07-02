@@ -40,8 +40,9 @@ const Index: NextPage = () => {
 	);
 };
 
-export const getStaticProps = wrapper.getStaticProps(async ({ store }) => {
+export const getStaticProps = wrapper.getStaticProps((store) => async () => {
 	store.dispatch(updateGithubUpdated());
+	return { props: {} };
 });
 
 export default Index;
