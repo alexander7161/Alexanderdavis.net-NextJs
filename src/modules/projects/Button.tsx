@@ -2,7 +2,7 @@ import WhiteIcon from "../../components/WhiteIcon";
 import { IconName } from "@fortawesome/fontawesome-svg-core";
 import { Button } from "@material-ui/core";
 import React from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import styled, { css } from "styled-components";
 
 const buttonStyle = css`
@@ -25,7 +25,7 @@ const StyledButton = styled(Button)`
 	height: 100%;
 `;
 
-const StyledLink = styled(ReactGA.OutboundLink)`
+const StyledLink = styled.a`
 	${buttonStyle}
 `;
 
@@ -49,7 +49,7 @@ const ButtonComponent = ({
 	eventLabel: string;
 	className?: string;
 }) => (
-	<StyledLink eventLabel={eventLabel} to={URL} className={className}>
+	<StyledLink href={URL} className={className}>
 		<StyledButton size="small" variant="contained" color="secondary">
 			{name && <Icon icon={["fab", name]} />}
 			{text}
