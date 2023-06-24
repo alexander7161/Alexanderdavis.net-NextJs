@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { AppProps } from "next/app";
 import { useDispatch } from "react-redux";
 
@@ -19,8 +19,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 library.add(faLinkedin, faLastfm, faGithub, faJava, faAndroid, faChrome);
 
-ReactGA.initialize("UA-44297367-1", {
-	debug: process.env.NODE_ENV === "development",
+ReactGA.initialize("G-3W3BDX0XD9", {
+	testMode: process.env.NODE_ENV === "development",
 });
 
 const WrappedApp: FC<AppProps> = ({ Component, pageProps }) => {

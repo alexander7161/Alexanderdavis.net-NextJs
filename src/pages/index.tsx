@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { NextPage } from "next";
 import Head from "next/head";
-import ReactGA from "react-ga";
 
 import Projects from "../modules/projects";
 import SwipeableViews from "react-swipeable-views";
@@ -18,10 +17,6 @@ const Index: NextPage = () => {
 		current: { index, name },
 		next: { replace },
 	} = usePageIndex();
-
-	useEffect(() => {
-		ReactGA.pageview(window.location.pathname + window.location.search);
-	}, [index]);
 
 	return (
 		<>
