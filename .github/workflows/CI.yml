@@ -69,4 +69,4 @@ jobs:
           server: ${{ secrets.HOST }}/${{ secrets.HOST_PATH }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.PASSWORD }}
-          local-dir: src/out
+          local-dir: src/out/
