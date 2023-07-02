@@ -64,9 +64,9 @@ jobs:
       - name: export
         run: npm run export
       - name: FTP-Deploy-Action
-        uses: SamKirkland/FTP-Deploy-Action@3.1.1
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          ftp-server: ${{ secrets.HOST }}/${{ secrets.HOST_PATH }}
-          ftp-username: ${{ secrets.FTP_USER }}
-          ftp-password: ${{ secrets.PASSWORD }}
+          server: ${{ secrets.HOST }}/${{ secrets.HOST_PATH }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.PASSWORD }}
           local-dir: src/out
